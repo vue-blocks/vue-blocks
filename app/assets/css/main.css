@@ -1,0 +1,174 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* https://github.com/unovue/shadcn-vue/blob/dev/apps/www/src/registry/registry-base-colors.ts#L758 */
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+    --color-chart-1: var(--chart-1);
+    --color-chart-2: var(--chart-2);
+    --color-chart-3: var(--chart-3);
+    --color-chart-4: var(--chart-4);
+    --color-chart-5: var(--chart-5);
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+    --color-sidebar: var(--sidebar);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-ring: var(--sidebar-ring);
+    --color-base-content: var(--base-content);
+}
+
+:root {
+    --height: 58.125rem;
+    --sidebar-width: 15.625rem;
+    --color-white: oklch(1 0 0);
+    --base-content: oklch(21% 0.034 264.665);
+    --color-primary-50: oklch(97.29% 0.003 264.7);
+    --color-primary-100: oklch(93.94% 0.005 258.37);
+    --color-primary-200: oklch(88.01% 0.01 252.82);
+    --color-primary-300: oklch(82.69% 0.015 254.62);
+    --color-primary-400: oklch(76.66% 0.02 255.56);
+    --color-primary-500: oklch(70.69% 0.023 250.29);
+    --color-primary-600: oklch(64.92% 0.021 252.95);
+    --color-primary-700: oklch(52.53% 0.018 257.24);
+    --color-primary-800: oklch(39.59% 0.014 256.76);
+    --color-primary-900: oklch(26.72% 0.009 255.58);
+    --color-primary-950: oklch(19.78% 0.006 236.88);
+
+    --card: var(--color-white);
+    --card-foreground: var(--color-primary-950);
+    --popover: var(--color-white);
+    --popover-foreground: var(--color-primary-950);
+    --primary: var(--color-primary-900);
+    --primary-foreground: var(--color-primary-50);
+    --secondary: var(--color-primary-100);
+    --secondary-foreground: var(--color-primary-900);
+    --muted: var(--color-primary-100);
+    --muted-foreground: var(--color-primary-500);
+    --accent: var(--color-primary-100);
+    --accent-foreground: var(--base-content);
+    /*--color-red-600*/
+    --destructive: oklch(0.577 0.245 27.325);
+    /*--color-red-600*/
+    --destructive-foreground: oklch(0.577 0.245 27.325);
+    --border: var(--color-primary-200);
+    --input: var(--color-primary-200);
+    --ring: var(--color-primary-400);
+    /*--chart-1: oklch(0.646 0.222 41.116);*/
+    /*--chart-2: oklch(0.6 0.118 184.704);*/
+    /*--chart-3: oklch(0.398 0.07 227.392);*/
+    /*--chart-4: oklch(0.828 0.189 84.429);*/
+    /*--chart-5: oklch(0.769 0.188 70.08);*/
+    --radius: 0.5rem;
+    --sidebar: var(--color-primary-50);
+    --sidebar-foreground: var(--color-primary-950);
+    --sidebar-primary: var(--color-primary-900);
+    --sidebar-primary-foreground: var(--color-primary-50);
+    --sidebar-accent: var(--color-primary-100);
+    --sidebar-accent-foreground: var(--color-primary-900);
+    --sidebar-border: var(--color-primary-200);
+    --sidebar-ring: var(--color-primary-400);
+    --background: var(--color-white);
+    --foreground: var(--base-content);
+}
+
+.dark {
+    --background: oklch(0.145 0 0);
+    --foreground: oklch(0.985 0 0);
+    --card: oklch(0.145 0 0);
+    --card-foreground: oklch(0.985 0 0);
+    --popover: oklch(0.145 0 0);
+    --popover-foreground: oklch(0.985 0 0);
+    --primary: oklch(0.985 0 0);
+    --primary-foreground: oklch(0.205 0 0);
+    --secondary: oklch(0.269 0 0);
+    --secondary-foreground: oklch(0.985 0 0);
+    --muted: oklch(0.269 0 0);
+    --muted-foreground: oklch(0.708 0 0);
+    --accent: oklch(0.269 0 0);
+    --accent-foreground: oklch(0.985 0 0);
+    --destructive: oklch(0.396 0.141 25.723);
+    --destructive-foreground: oklch(0.637 0.237 25.331);
+    --border: oklch(0.269 0 0);
+    --input: oklch(0.269 0 0);
+    --ring: oklch(0.439 0 0);
+    --chart-1: oklch(0.488 0.243 264.376);
+    --chart-2: oklch(0.696 0.17 162.48);
+    --chart-3: oklch(0.769 0.188 70.08);
+    --chart-4: oklch(0.627 0.265 303.9);
+    --chart-5: oklch(0.645 0.246 16.439);
+    --sidebar: oklch(0.205 0 0);
+    --sidebar-foreground: oklch(0.985 0 0);
+    --sidebar-primary: oklch(0.488 0.243 264.376);
+    --sidebar-primary-foreground: oklch(0.985 0 0);
+    --sidebar-accent: oklch(0.269 0 0);
+    --sidebar-accent-foreground: oklch(0.985 0 0);
+    --sidebar-border: oklch(0.269 0 0);
+    --sidebar-ring: oklch(0.439 0 0);
+}
+
+@layer base {
+    * {
+        @apply border-border outline-ring/50;
+        scrollbar-width: thin;
+        scrollbar-color: hsl(var(--border)) transparent
+    }
+
+    html {
+        @apply relative w-full h-full scroll-smooth;
+    }
+
+    body {
+        @apply antialiased text-base text-foreground bg-background;
+    }
+
+    #__nuxt {
+        @apply relative min-h-screen;
+    }
+
+    [data-line-codeblock] code {
+        display: grid;
+        min-width: 100%;
+        overflow-wrap: break-word;
+        border-radius: 0;
+        border-width: 0;
+        background-color: transparent;
+        padding: 0;
+        counter-reset: line;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+    }
+
+    [data-line-codeblock] .line:before {
+        @apply ml-4;
+        content: '';
+    }
+
+}

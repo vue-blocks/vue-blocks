@@ -1,0 +1,26 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "footer2",
+  "type": "registry:block",
+  "title": "Footer",
+  "dependencies": [
+    "@iconify/vue"
+  ],
+  "registryDependencies": [
+    "separator"
+  ],
+  "files": [
+    {
+      "path": "app/registry/blocks/footer/footer2/Footer2.vue",
+      "content": "<template>\n    <section class=\"py-32\">\n        <div class=\"container mx-auto p-8\">\n            <footer>\n                <div class=\"grid grid-cols-2 gap-8 lg:grid-cols-6\">\n                    <div class=\"col-span-2 mb-8 lg:mb-0\">\n                        <div class=\"flex items-center gap-2 lg:justify-start\">\n                            <a\n                                :href=\"logo.url\"\n                                class=\"flex max-h-8 items-center gap-2\"\n                            >\n                                <img\n                                    :alt=\"logo.title\"\n                                    :src=\"logo.src\"\n                                    :title=\"logo.title\"\n                                    class=\"block h-10\"\n                                >\n                                <span class=\"font-semibold tracking-tighter text-xl\">{{ logo.title }}</span>\n                            </a>\n                        </div>\n                        <p class=\"mt-4 font-bold\">\n                            {{ tagline }}\n                        </p>\n                    </div>\n\n                    <div\n                        v-for=\"(section, sectionIdx) in menuItems\"\n                        :key=\"sectionIdx\"\n                    >\n                        <h3 class=\"mb-4 font-bold\">\n                            {{ section.title }}\n                        </h3>\n                        <ul class=\"text-muted-foreground space-y-4\">\n                            <li\n                                v-for=\"(link, linkIdx) in section.links\"\n                                :key=\"linkIdx\"\n                                class=\"hover:text-primary font-medium\"\n                            >\n                                <a :href=\"link.url\">{{ link.text }}</a>\n                            </li>\n                        </ul>\n                    </div>\n                </div>\n                <div\n                    class=\"text-muted-foreground mt-24 flex flex-col justify-between gap-4 border-t pt-8 text-sm font-medium md:flex-row md:items-center\"\n                >\n                    <p>{{ copyright }}</p>\n                    <ul class=\"flex gap-4\">\n                        <li\n                            v-for=\"link in bottomLinks\"\n                            :key=\"link.text\"\n                            class=\"hover:text-primary underline\"\n                        >\n                            <a :href=\"link.url\">{{ link.text }}</a>\n                        </li>\n                    </ul>\n                </div>\n            </footer>\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nconst logo = {\n    src: '/logo.svg',\n    alt: 'blocks for shadcn/ui',\n    title: 'vue-blocks.dev',\n    url: 'https://vue-blocks.dev',\n}\nconst tagline = 'Components made easy.'\nconst copyright = '© 2025 vue-blocks.dev. All rights reserved.'\n\nconst menuItems = [\n    {\n        title: 'Product',\n        links: [\n            { text: 'Overview', url: '#' },\n            { text: 'Pricing', url: '#' },\n            { text: 'Marketplace', url: '#' },\n            { text: 'Features', url: '#' },\n            { text: 'Integrations', url: '#' },\n            { text: 'Pricing', url: '#' },\n        ],\n    },\n    {\n        title: 'Company',\n        links: [\n            { text: 'About', url: '#' },\n            { text: 'Team', url: '#' },\n            { text: 'Blog', url: '#' },\n            { text: 'Careers', url: '#' },\n            { text: 'Contact', url: '#' },\n            { text: 'Privacy', url: '#' },\n        ],\n    },\n    {\n        title: 'Resources',\n        links: [\n            { text: 'Help', url: '#' },\n            { text: 'Sales', url: '#' },\n            { text: 'Advertise', url: '#' },\n        ],\n    },\n    {\n        title: 'Social',\n        links: [\n            { text: 'Twitter', url: '#' },\n            { text: 'Instagram', url: '#' },\n            { text: 'LinkedIn', url: '#' },\n        ],\n    },\n]\n\nconst bottomLinks = [\n    { text: 'Terms and Conditions', url: '#' },\n    { text: 'Privacy Policy', url: '#' },\n]\n</script>\n",
+      "type": "registry:block",
+      "target": "block/footer/footer2/Footer2.vue"
+    },
+    {
+      "path": "app/registry/blocks/footer/footer2/index.ts",
+      "content": "export { default as Footer1 } from './Footer2.vue'\n",
+      "type": "registry:block",
+      "target": "block/footer/footer2/index.ts"
+    }
+  ]
+}

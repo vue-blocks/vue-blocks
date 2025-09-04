@@ -1,0 +1,97 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry.json",
+    "name": "vue-blocks",
+    "homepage": "https://vue-blocks.dev",
+    "items": [
+        {
+            "name": "footer2",
+            "type": "registry:block",
+            "title": "Footer",
+            "dependencies": [
+                "@iconify/vue"
+            ],
+            "registryDependencies": [
+                "separator"
+            ],
+            "files": [
+                {
+                    "path": "app/registry/blocks/footer/footer2/Footer2.vue",
+                    "type": "registry:block",
+                    "target": "block/footer/footer2/Footer2.vue"
+                },
+                {
+                    "path": "app/registry/blocks/footer/footer2/index.ts",
+                    "type": "registry:block",
+                    "target": "block/footer/footer2/index.ts"
+                }
+            ]
+        },
+        {
+            "name": "footer1",
+            "type": "registry:block",
+            "title": "Footer",
+            "dependencies": [
+                "@iconify/vue"
+            ],
+            "registryDependencies": [
+                "separator"
+            ],
+            "files": [
+                {
+                    "path": "app/registry/blocks/footer/footer1/Footer1.vue",
+                    "type": "registry:block",
+                    "target": "block/footer/footer1/Footer1.vue"
+                },
+                {
+                    "path": "app/registry/blocks/footer/footer1/index.ts",
+                    "type": "registry:block",
+                    "target": "block/footer/footer1/index.ts"
+                }
+            ]
+        },
+        {
+            "name": "card2",
+            "type": "registry:block",
+            "title": "Card",
+            "dependencies": [],
+            "registryDependencies": [
+                "button",
+                "badge"
+            ],
+            "files": [
+                {
+                    "path": "app/registry/blocks/card/card2/Card2.vue",
+                    "type": "registry:block",
+                    "target": "src/components/card/card2/Card2.vue"
+                },
+                {
+                    "path": "app/registry/blocks/card/card2/index.ts",
+                    "type": "registry:block",
+                    "target": "src/components/card/card2/index.ts"
+                }
+            ]
+        },
+        {
+            "name": "card1",
+            "type": "registry:block",
+            "title": "Card",
+            "dependencies": [],
+            "registryDependencies": [
+                "button",
+                "badge"
+            ],
+            "files": [
+                {
+                    "path": "app/registry/blocks/card/card1/Card1.vue",
+                    "type": "registry:block",
+                    "target": "src/components/card/card1/Card1.vue"
+                },
+                {
+                    "path": "app/registry/blocks/card/card1/index.ts",
+                    "type": "registry:block",
+                    "target": "src/components/card/card1/index.ts"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "card2",
+    "type": "registry:block",
+    "title": "Card",
+    "dependencies": [],
+    "registryDependencies": [
+        "button",
+        "badge"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/card/card2/Card2.vue",
+            "type": "registry:block",
+            "target": "src/components/card/card2/Card2.vue"
+        },
+        {
+            "path": "app/registry/blocks/card/card2/index.ts",
+            "type": "registry:block",
+            "target": "src/components/card/card2/index.ts"
+        }
+    ],
+    "component": "@/registry/blocks/card/card2/Card2.vue",
+    "className": [
+        "min-w-screen",
+        "min-h-screen",
+        "flex",
+        "justify-center",
+        "items-center"
+    ]
+}

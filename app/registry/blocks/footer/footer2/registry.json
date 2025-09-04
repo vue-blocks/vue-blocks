@@ -1,0 +1,25 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "footer2",
+    "type": "registry:block",
+    "title": "Footer",
+    "dependencies": [
+        "@iconify/vue"
+    ],
+    "registryDependencies": [
+        "separator"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/footer/footer2/Footer2.vue",
+            "type": "registry:block",
+            "target": "block/footer/footer2/Footer2.vue"
+        },
+        {
+            "path": "app/registry/blocks/footer/footer2/index.ts",
+            "type": "registry:block",
+            "target": "block/footer/footer2/index.ts"
+        }
+    ],
+    "component": "@/registry/blocks/footer/footer2/Footer2.vue"
+}
