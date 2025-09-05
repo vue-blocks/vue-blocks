@@ -1,0 +1,22 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "cta3",
+    "type": "registry:block",
+    "title": "Cta",
+    "dependencies": [
+        "@iconify/vue"
+    ],
+    "registryDependencies": [
+        "button"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/cta/cta3/Cta3.vue",
+            "type": "registry:block",
+            "target": "src/components/cta/cta3/Cta3.vue"
+        }
+    ],
+    "component": "@/registry/blocks/cta/cta3/Cta3.vue",
+    "className": []
+}
+

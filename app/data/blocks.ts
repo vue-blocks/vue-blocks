@@ -83,6 +83,20 @@ export const blocks = {
         raw: () => import('@/registry/blocks/feature/feature1/Feature1.vue?raw').then(m => m.default),
     },
 
+    cta3: {
+        files: [
+            {
+                name: 'Cta3',
+                target: 'pages/index.vue',
+                path: '@/registry/blocks/cta/cta3/Cta3.vue',
+                raw: () => import('@/registry/blocks/cta/cta3/Cta3.vue?raw').then(m => m.default),
+            },
+        ],
+        className: '',
+        component: () => import('@/registry/blocks/cta/cta3/Cta3.vue').then(m => m.default),
+        raw: () => import('@/registry/blocks/cta/cta3/Cta3.vue?raw').then(m => m.default),
+    },
+
     cta2: {
         files: [
             {

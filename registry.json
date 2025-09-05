@@ -66,37 +66,6 @@
             ]
         },
         {
-            "name": "cta1",
-            "type": "registry:block",
-            "title": "Cta",
-            "dependencies": [],
-            "registryDependencies": [
-                "button"
-            ],
-            "files": [
-                {
-                    "path": "app/registry/blocks/cta/cta1/Cta1.vue",
-                    "type": "registry:block"
-                }
-            ]
-        },
-        {
-            "name": "card2",
-            "type": "registry:block",
-            "title": "Card",
-            "dependencies": [],
-            "registryDependencies": [
-                "button",
-                "badge"
-            ],
-            "files": [
-                {
-                    "path": "app/registry/blocks/card/card2/Card2.vue",
-                    "type": "registry:block"
-                }
-            ]
-        },
-        {
             "name": "feature2",
             "type": "registry:block",
             "title": "Feature",
@@ -141,6 +110,37 @@
             ]
         },
         {
+            "name": "cta1",
+            "type": "registry:block",
+            "title": "Cta",
+            "dependencies": [],
+            "registryDependencies": [
+                "button"
+            ],
+            "files": [
+                {
+                    "path": "app/registry/blocks/cta/cta1/Cta1.vue",
+                    "type": "registry:block"
+                }
+            ]
+        },
+        {
+            "name": "card2",
+            "type": "registry:block",
+            "title": "Card",
+            "dependencies": [],
+            "registryDependencies": [
+                "button",
+                "badge"
+            ],
+            "files": [
+                {
+                    "path": "app/registry/blocks/card/card2/Card2.vue",
+                    "type": "registry:block"
+                }
+            ]
+        },
+        {
             "name": "card1",
             "type": "registry:block",
             "title": "Card",
@@ -153,6 +153,24 @@
                 {
                     "path": "app/registry/blocks/card/card1/Card1.vue",
                     "type": "registry:block"
+                }
+            ]
+        },
+        {
+            "name": "cta3",
+            "type": "registry:block",
+            "title": "Cta",
+            "dependencies": [
+                "@iconify/vue"
+            ],
+            "registryDependencies": [
+                "button"
+            ],
+            "files": [
+                {
+                    "path": "app/registry/blocks/cta/cta3/Cta3.vue",
+                    "type": "registry:block",
+                    "target": "src/components/cta/cta3/Cta3.vue"
                 }
             ]
         }
