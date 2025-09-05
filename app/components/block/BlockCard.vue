@@ -11,7 +11,7 @@
                         'hover:transition-all hover:duration-10 hover:scale-120',
                     )"
                     :src="screenshots"
-                    class="size-full rounded-md transition-all duration-150"
+                    class="size-full h-40 rounded-md transition-all duration-150"
                     style="transition: all .5s ease;"
                 >
             </NuxtLink>
