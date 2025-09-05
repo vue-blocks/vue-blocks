@@ -1,0 +1,20 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "cta4",
+  "type": "registry:block",
+  "title": "Cta",
+  "dependencies": [
+    "@iconify/vue"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "app/registry/blocks/cta/cta4/Cta4.vue",
+      "content": "<template>\n    <section class=\"py-32\">\n        <div class=\"container mx-auto\">\n            <div class=\"bg-accent rounded-lg p-8 md:rounded-xl lg:p-12\">\n                <div class=\"max-w-4xl\">\n                    <h3 class=\"mb-4 text-3xl font-semibold md:text-5xl lg:mb-6 lg:text-6xl\">\n                        {{ heading }}\n                    </h3>\n                    <p class=\"text-muted-foreground mb-8 text-lg font-medium lg:text-xl\">\n                        {{ description }}\n                    </p>\n                    <div class=\"flex flex-col gap-3 sm:flex-row sm:gap-4\">\n                        <Button\n                            size=\"lg\"\n                            class=\"w-full sm:w-auto\"\n                            as-child\n                        >\n                            <a :href=\"buttons.primary.url\">{{ buttons.primary.text }}</a>\n                        </Button>\n                        <Button\n                            variant=\"outline\"\n                            size=\"lg\"\n                            class=\"w-full sm:w-auto\"\n                            as-child\n                        >\n                            <a :href=\"buttons.secondary.url\">{{ buttons.secondary.text }}</a>\n                        </Button>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nimport { Button } from '@/components/ui/button'\nimport { Icon } from '@iconify/vue'\n\nconst heading = 'Call to Action'\nconst description = 'Build faster with our collection of pre-built blocks. Speed up your development and ship features in record time.'\nconst buttons = {\n    primary: {\n        text: 'Buy Now',\n        url: 'https://vue-blocks.dev',\n    },\n    secondary: {\n        text: 'Contact Us',\n        url: 'https://vue-blocks.dev',\n    },\n}\n</script>\n",
+      "type": "registry:block",
+      "target": "src/components/cta/cta4/Cta4.vue"
+    }
+  ]
+}

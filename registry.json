@@ -4,35 +4,66 @@
     "homepage": "https://vue-blocks.dev",
     "items": [
         {
-            "name": "footer2",
+            "name": "cta4",
             "type": "registry:block",
-            "title": "Footer",
+            "title": "Cta",
             "dependencies": [
                 "@iconify/vue"
             ],
             "registryDependencies": [
-                "separator"
+                "button"
             ],
             "files": [
                 {
-                    "path": "app/registry/blocks/footer/footer2/Footer2.vue",
-                    "type": "registry:block"
+                    "path": "app/registry/blocks/cta/cta4/Cta4.vue",
+                    "type": "registry:block",
+                    "target": "src/components/cta/cta4/Cta4.vue"
                 }
             ]
         },
         {
-            "name": "footer1",
+            "name": "cta3",
             "type": "registry:block",
-            "title": "Footer",
+            "title": "Cta",
             "dependencies": [
                 "@iconify/vue"
             ],
             "registryDependencies": [
-                "separator"
+                "button"
             ],
             "files": [
                 {
-                    "path": "app/registry/blocks/footer/footer1/Footer1.vue",
+                    "path": "app/registry/blocks/cta/cta3/Cta3.vue",
+                    "type": "registry:block",
+                    "target": "src/components/cta/cta3/Cta3.vue"
+                }
+            ]
+        },
+        {
+            "name": "cta2",
+            "type": "registry:block",
+            "title": "Cta",
+            "dependencies": [],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "app/registry/blocks/cta/cta2/Cta2.vue",
+                    "type": "registry:block",
+                    "target": "src/components/cta/cta2/Cta2.vue"
+                }
+            ]
+        },
+        {
+            "name": "cta1",
+            "type": "registry:block",
+            "title": "Cta",
+            "dependencies": [],
+            "registryDependencies": [
+                "button"
+            ],
+            "files": [
+                {
+                    "path": "app/registry/blocks/cta/cta1/Cta1.vue",
                     "type": "registry:block"
                 }
             ]
@@ -48,19 +79,6 @@
             "files": [
                 {
                     "path": "app/registry/blocks/feature/feature4/Feature4.vue",
-                    "type": "registry:block"
-                }
-            ]
-        },
-        {
-            "name": "feature3",
-            "type": "registry:block",
-            "title": "Feature",
-            "dependencies": [],
-            "registryDependencies": [],
-            "files": [
-                {
-                    "path": "app/registry/blocks/feature/feature3/Feature3.vue",
                     "type": "registry:block"
                 }
             ]
@@ -96,46 +114,35 @@
             ]
         },
         {
-            "name": "cta2",
+            "name": "footer2",
             "type": "registry:block",
-            "title": "Cta",
-            "dependencies": [],
-            "registryDependencies": [],
-            "files": [
-                {
-                    "path": "app/registry/blocks/cta/cta2/Cta2.vue",
-                    "type": "registry:block",
-                    "target": "src/components/cta/cta2/Cta2.vue"
-                }
-            ]
-        },
-        {
-            "name": "cta1",
-            "type": "registry:block",
-            "title": "Cta",
-            "dependencies": [],
+            "title": "Footer",
+            "dependencies": [
+                "@iconify/vue"
+            ],
             "registryDependencies": [
-                "button"
+                "separator"
             ],
             "files": [
                 {
-                    "path": "app/registry/blocks/cta/cta1/Cta1.vue",
+                    "path": "app/registry/blocks/footer/footer2/Footer2.vue",
                     "type": "registry:block"
                 }
             ]
         },
         {
-            "name": "card2",
+            "name": "footer1",
             "type": "registry:block",
-            "title": "Card",
-            "dependencies": [],
+            "title": "Footer",
+            "dependencies": [
+                "@iconify/vue"
+            ],
             "registryDependencies": [
-                "button",
-                "badge"
+                "separator"
             ],
             "files": [
                 {
-                    "path": "app/registry/blocks/card/card2/Card2.vue",
+                    "path": "app/registry/blocks/footer/footer1/Footer1.vue",
                     "type": "registry:block"
                 }
             ]
@@ -157,20 +164,31 @@
             ]
         },
         {
-            "name": "cta3",
+            "name": "feature3",
             "type": "registry:block",
-            "title": "Cta",
-            "dependencies": [
-                "@iconify/vue"
-            ],
+            "title": "Feature",
+            "dependencies": [],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "app/registry/blocks/feature/feature3/Feature3.vue",
+                    "type": "registry:block"
+                }
+            ]
+        },
+        {
+            "name": "card2",
+            "type": "registry:block",
+            "title": "Card",
+            "dependencies": [],
             "registryDependencies": [
-                "button"
+                "button",
+                "badge"
             ],
             "files": [
                 {
-                    "path": "app/registry/blocks/cta/cta3/Cta3.vue",
-                    "type": "registry:block",
-                    "target": "src/components/cta/cta3/Cta3.vue"
+                    "path": "app/registry/blocks/card/card2/Card2.vue",
+                    "type": "registry:block"
                 }
             ]
         }
