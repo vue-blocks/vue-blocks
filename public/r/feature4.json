@@ -1,0 +1,24 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "feature4",
+  "type": "registry:block",
+  "title": "Feature",
+  "dependencies": [
+    "@iconify/vue"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "app/registry/blocks/feature/feature4/Feature4.vue",
+      "content": "<template>\n    <section class=\"py-32\">\n        <div class=\"container mx-auto\">\n            <p class=\"mb-4 text-sm text-muted-foreground lg:text-base\">\n                {{ subheading }}\n            </p>\n            <h2 class=\"text-3xl font-medium lg:text-4xl\">\n                {{ heading }}\n            </h2>\n            <div class=\"mt-14 grid gap-6 lg:mt-20 lg:grid-cols-3\">\n                <div\n                    v-for=\"(feature, idx) in features\"\n                    :key=\"idx\"\n                    class=\"rounded-lg bg-accent p-5\"\n                >\n                    <span class=\"mb-8 flex size-12 items-center justify-center rounded-full bg-background\">\n                        <Icon\n                            class=\"size-6\"\n                            :icon=\"feature.icon\"\n                        />\n                    </span>\n                    <h3 class=\"mb-2 text-xl font-medium\">\n                        {{ feature.title }}\n                    </h3>\n                    <p class=\"leading-7 text-muted-foreground\">\n                        {{ feature.description }}\n                    </p>\n                </div>\n            </div>\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nimport { Icon } from '@iconify/vue'\n\nconst heading = 'Why Choose Us?'\nconst subheading = 'OUR VALUES'\n\nconst features = [\n    {\n        title: 'Performance',\n        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt beatae tenetur totam aut blanditis ipsa quaerat neque eaque, atque doloremque! Eligendi.',\n        icon: 'lucide:timer',\n    },\n    {\n        title: 'Quality',\n        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt beatae tenetur totam aut blanditis ipsa quaerat neque eaque, atque doloremque! Eligendi.',\n        icon: 'lucide:zoom-in',\n    },\n    {\n        title: 'Innovation',\n        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt beatae tenetur totam aut blanditis ipsa quaerat neque eaque, atque doloremque! Eligendi.',\n        icon: 'lucide:zap',\n    },\n]\n</script>\n",
+      "type": "registry:block",
+      "target": "src/components/feature/feature4/Feature4.vue"
+    },
+    {
+      "path": "app/registry/blocks/feature/feature4/index.ts",
+      "content": "export { default as Feature4 } from './Feature4.vue'\n",
+      "type": "registry:block",
+      "target": "src/components/feature/feature4/index.ts"
+    }
+  ]
+}
