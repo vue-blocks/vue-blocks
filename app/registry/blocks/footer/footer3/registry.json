@@ -1,0 +1,15 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "footer3",
+    "type": "registry:block",
+    "title": "Footer",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+        {
+            "path": "app/registry/blocks/footer/footer3/Footer3.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/footer/footer3/Footer3.vue"
+}
