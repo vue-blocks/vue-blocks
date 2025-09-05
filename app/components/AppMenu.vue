@@ -32,7 +32,7 @@ defineOptions({
 
 const menus: { title: string, href: string }[] = [
     {
-        title: 'Block',
+        title: 'Blocks',
         href: '/blocks',
     },
     // {
