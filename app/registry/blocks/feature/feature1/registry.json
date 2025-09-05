@@ -9,7 +9,7 @@
     "registryDependencies": [],
     "files": [
         {
-            "path": "app/registry/blocks/feature/feature1/feature1.vue",
+            "path": "app/registry/blocks/feature/feature1/Feature1.vue",
             "type": "registry:block",
             "target": "src/components/feature/feature1/feature1.vue"
         },
@@ -19,7 +19,7 @@
             "target": "src/components/feature/feature1/index.ts"
         }
     ],
-    "component": "@/registry/blocks/feature/feature1/feature1.vue",
+    "component": "@/registry/blocks/feature/feature1/Feature1.vue",
     "className": []
 }
 
