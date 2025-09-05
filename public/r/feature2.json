@@ -1,0 +1,22 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "feature2",
+  "type": "registry:block",
+  "title": "Feature",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "app/registry/blocks/feature/feature2/Feature2.vue",
+      "content": "<template>\n    <section class=\"py-32\">\n        <div class=\"container mx-auto max-w-7xl\">\n            <p class=\"mb-4 text-xs text-muted-foreground md:pl-5\">\n                {{ subheading }}\n            </p>\n            <h2 class=\"text-3xl font-medium md:pl-5 lg:text-4xl\">\n                {{ heading }}\n            </h2>\n            <div class=\"mx-auto mt-14 grid gap-x-20 gap-y-8 md:grid-cols-2 md:gap-y-6 lg:mt-20\">\n                <div\n                    v-for=\"(feature, idx) in features\"\n                    :key=\"idx\"\n                    class=\"flex gap-6 rounded-lg md:block md:p-5\"\n                >\n                    <span\n                        class=\"mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12\"\n                    >\n                        <Icon\n                            :icon=\"feature.icon\"\n                            class=\"size-4 md:size-6\"\n                        />\n                    </span>\n                    <div>\n                        <h3 class=\"font-medium md:mb-2 md:text-xl\">\n                            {{ feature.title }}\n                        </h3>\n                        <p class=\"text-sm text-muted-foreground md:text-base\">\n                            {{ feature.description }}\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nimport { Icon } from '@iconify/vue'\n\nconst heading = 'Our Core Features'\nconst subheading = 'Features'\n\nconst features = [\n\n    {\n        title: 'Performance',\n        description:\n            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',\n        icon: 'lucide:timer',\n    },\n    {\n        title: 'Innovation',\n        description:\n            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',\n        icon: 'lucide:zap',\n    },\n    {\n        title: 'Quality',\n        description:\n            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',\n        icon: 'lucide:zoom-in',\n    },\n    {\n        title: 'Accessibility',\n        description:\n            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',\n        icon: 'lucide:person-standing',\n    },\n    {\n        title: 'Affordability',\n        description:\n            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',\n        icon: 'lucide:dollar-sign',\n    },\n    {\n        title: 'Customer Support',\n        description:\n            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',\n        icon: 'lucide:message-square',\n    },\n]\n</script>\n",
+      "type": "registry:block",
+      "target": "src/components/feature/feature2/Feature2.vue"
+    },
+    {
+      "path": "app/registry/blocks/feature/feature2/index.ts",
+      "content": "export { default as Feature2 } from './Feature2.vue'\n",
+      "type": "registry:block",
+      "target": "src/components/feature/feature2/index.ts"
+    }
+  ]
+}
