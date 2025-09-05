@@ -6,7 +6,9 @@
                     Vue Blocks - Specially designed for modern developers UI building blocks
                 </h1>
                 <p class="mt-4 text-sm text-muted-foreground">
-                    All built on Tailwind CSS, it combines aesthetics, performance and flexibility. It not only enables you to quickly build stunning pages, but also keeps the project structurally clear and maintainable, suitable for various needs of individual developers, start-up teams, and even large enterprises.
+                    All built on Tailwind CSS, it combines aesthetics, performance and flexibility. It not only enables
+                    you to quickly build stunning pages, but also keeps the project structurally clear and maintainable,
+                    suitable for various needs of individual developers, start-up teams, and even large enterprises.
                 </p>
             </div>
         </div>
@@ -29,45 +31,33 @@
                     <div
                         class="grid grid-cols-1 gap-2 md:gap-8 xl:gap-12 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
                     >
-                        <NuxtLink
+                        <div
                             v-for="item in menu.children"
                             :key="item.name"
-                            :class="cn(
-                                'p-px',
-                                'transition-all duration-200',
-                                'group rounded-xl',
-                                'bg-linear-to-b from-gray-200 to-white',
-                                // 'dark:from-gray-800 dark:to-gray-900/80',
-                                // 'hover:from-blue-300 dark:hover:bg-blue-400',
-                            )"
-                            target="_blank"
-                            :to="`/block/${item.name}`"
+                            class="bg-muted border border-accent rounded-xl px-5 pt-5"
                         >
-
-                            <div
-                                :class="cn(
-                                    'p-3 rounded-xl',
-                                    'bg-white dark:bg-gray-950/80 dark:group-hover:bg-gray-950/70',
-                                    'transition-all duration-500 hover:bg-accent/20',
-                                )"
-                            >
-                                <img
-                                    :alt="item.name"
-                                    :src="`/screenshots/block/${item.name}.png`"
-                                    class="size-full rounded-xl"
+                            <div class="relative overflow-hidden">
+                                <NuxtLink
+                                    :to="`/block/${item.name}`"
+                                    class="transition-all duration-150 ease-in"
                                 >
-                                <div class="flex items-start justify-between px-2 pt-4 pb-2">
-                                    <h3
+                                    <img
+                                        :alt="item.name"
+                                        :src="`/screenshots/block/${item.name}.png`"
+                                        class="size-full rounded-md transition-all duration-150"
+                                        style="transition: all .5s ease;"
                                         :class="cn(
-                                            'text-lg font-medium',
-                                            'transition-all duration-500',
-                                            'dark:text-muted',
-                                            // 'group-hover:text-blue-700 dark:group-hover:text-blue-600',
+                                            'hover:transition-all hover:duration-10 hover:scale-120',
                                         )"
-                                    >{{ item.name }}</h3>
-                                </div>
+                                    >
+                                </NuxtLink>
                             </div>
-                        </NuxtLink>
+                            <div class="flex flex-wrap justify-center items-center pt-5">
+                                <Button class="rounded-b-none">
+                                    {{ item.name }}
+                                </Button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -76,9 +66,10 @@
 </template>
 
 <script lang="ts" setup>
-import { cn } from '~/lib/utils'
 import menus from '~/data/menus.json'
 import type { IMenu } from '~/types/menus'
+import { Button } from '~/components/ui/button'
+import { cn } from '~/lib/utils'
 
 useSeoMeta({
     title: 'Vue Blocks - Specially designed for modern developers UI building blocks',
