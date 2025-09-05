@@ -31,33 +31,13 @@
                     <div
                         class="grid grid-cols-1 gap-2 md:gap-8 xl:gap-12 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
                     >
-                        <div
+                        <BlockCard
                             v-for="item in menu.children"
                             :key="item.name"
-                            class="bg-muted border border-accent rounded-xl px-5 pt-5"
-                        >
-                            <div class="relative overflow-hidden">
-                                <NuxtLink
-                                    :to="`/block/${item.name}`"
-                                    class="transition-all duration-150 ease-in"
-                                >
-                                    <img
-                                        :alt="item.name"
-                                        :src="`/screenshots/block/${item.name}.png`"
-                                        class="size-full rounded-md transition-all duration-150"
-                                        style="transition: all .5s ease;"
-                                        :class="cn(
-                                            'hover:transition-all hover:duration-10 hover:scale-120',
-                                        )"
-                                    >
-                                </NuxtLink>
-                            </div>
-                            <div class="flex flex-wrap justify-center items-center pt-5">
-                                <Button class="rounded-b-none">
-                                    {{ item.name }}
-                                </Button>
-                            </div>
-                        </div>
+                            :module="item.name"
+                            :screenshots="`/screenshots/block/${item.name}.png`"
+                            :url="`/block/${item.name}`"
+                        />
                     </div>
                 </div>
             </div>
@@ -68,8 +48,7 @@
 <script lang="ts" setup>
 import menus from '~/data/menus.json'
 import type { IMenu } from '~/types/menus'
-import { Button } from '~/components/ui/button'
-import { cn } from '~/lib/utils'
+import BlockCard from '~/components/block/BlockCard.vue'
 
 useSeoMeta({
     title: 'Vue Blocks - Specially designed for modern developers UI building blocks',
