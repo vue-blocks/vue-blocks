@@ -3,7 +3,9 @@
     "name": "feature2",
     "type": "registry:block",
     "title": "Feature",
-    "dependencies": [],
+    "dependencies": [
+        "@iconify/vue"
+    ],
     "registryDependencies": [],
     "files": [
         {
