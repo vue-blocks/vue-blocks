@@ -54,9 +54,19 @@
         "@types/node": "^24.0.14",
         "eslint": "^9.31.0",
         "glob": "^11.0.3",
+        "lint-staged": "^16.1.6",
+        "picocolors": "^1.1.1",
         "shadcn-vue": "^2.2.0",
         "shiki": "^3.12.2",
+        "simple-git-hooks": "^2.13.1",
         "tsx": "^4.20.5",
         "typescript": "^5.8.3"
+    },
+    "simple-git-hooks": {
+        "pre-commit": "npx lint-staged",
+        "commit-msg": "node scripts/verify-commit.js"
+    },
+    "lint-staged": {
+        "*": "eslint --fix"
     }
 }
