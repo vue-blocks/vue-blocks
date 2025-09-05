@@ -11,7 +11,7 @@
         {
             "path": "app/registry/blocks/feature/feature1/Feature1.vue",
             "type": "registry:block",
-            "target": "src/components/feature/feature1/feature1.vue"
+            "target": "src/components/feature/feature1/Feature1.vue"
         },
         {
             "path": "app/registry/blocks/feature/feature1/index.ts",
