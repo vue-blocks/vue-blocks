@@ -16,7 +16,8 @@
         "register:build": "shadcn-vue build --output ./public/r",
         "generator:menus": "tsx ./scripts/menus.ts",
         "build:shadcn:data": "npm run generator:registry.json && npm run register:build && npm run generator:menus",
-        "lint:fix": "eslint --fix"
+        "lint:fix": "eslint --fix",
+        "registry:template": "tsx ./scripts/create-registry-template.ts"
     },
     "homepage": "https://github.com/vue-blocks/vue-blocks#readme",
     "bugs": {
