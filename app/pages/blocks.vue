@@ -20,7 +20,10 @@
                     :key="menu.channel"
                     class="w-full"
                 >
-                    <div class="mb-8 flex flex-col gap-2">
+                    <div
+                        :id="menu.channel.toLowerCase()"
+                        class="mb-8 flex flex-col gap-2"
+                    >
                         <h3 class="text-2xl font-semibold">
                             {{ menu.channel }}
                         </h3>
