@@ -59,6 +59,11 @@ const blocks = [
         alias: '/blocks/#feature',
     },
     {
+        title: 'Cta',
+        screenshots: '/screenshots/block/cta1.png',
+        alias: '/blocks/#cta',
+    },
+    {
         title: 'Card',
         screenshots: '/screenshots/block/card1.png',
         alias: '/blocks/#card',

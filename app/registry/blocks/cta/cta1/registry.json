@@ -1,0 +1,25 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "cta1",
+    "type": "registry:block",
+    "title": "Cta",
+    "dependencies": [],
+    "registryDependencies": [
+        "button"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/cta/cta1/Cta1.vue",
+            "type": "registry:block",
+            "target": "src/components/cta/cta1/Cta1.vue"
+        },
+        {
+            "path": "app/registry/blocks/cta/cta1/index.ts",
+            "type": "registry:block",
+            "target": "src/components/cta/cta1/index.ts"
+        }
+    ],
+    "component": "@/registry/blocks/cta/cta1/Cta1.vue",
+    "className": []
+}
+
