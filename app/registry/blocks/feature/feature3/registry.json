@@ -8,13 +8,7 @@
     "files": [
         {
             "path": "app/registry/blocks/feature/feature3/Feature3.vue",
-            "type": "registry:block",
-            "target": "src/components/feature/feature3/Feature3.vue"
-        },
-        {
-            "path": "app/registry/blocks/feature/feature3/index.ts",
-            "type": "registry:block",
-            "target": "src/components/feature/feature3/index.ts"
+            "type": "registry:block"
         }
     ],
     "component": "@/registry/blocks/feature/feature3/Feature3.vue",

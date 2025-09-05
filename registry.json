@@ -4,23 +4,17 @@
     "homepage": "https://vue-blocks.dev",
     "items": [
         {
-            "name": "cta1",
+            "name": "feature1",
             "type": "registry:block",
-            "title": "Cta",
-            "dependencies": [],
-            "registryDependencies": [
-                "button"
+            "title": "Feature",
+            "dependencies": [
+                "@iconify/vue"
             ],
+            "registryDependencies": [],
             "files": [
                 {
-                    "path": "app/registry/blocks/cta/cta1/Cta1.vue",
-                    "type": "registry:block",
-                    "target": "src/components/cta/cta1/Cta1.vue"
-                },
-                {
-                    "path": "app/registry/blocks/cta/cta1/index.ts",
-                    "type": "registry:block",
-                    "target": "src/components/cta/cta1/index.ts"
+                    "path": "app/registry/blocks/feature/feature1/Feature1.vue",
+                    "type": "registry:block"
                 }
             ]
         },
@@ -35,96 +29,7 @@
             "files": [
                 {
                     "path": "app/registry/blocks/feature/feature4/Feature4.vue",
-                    "type": "registry:block",
-                    "target": "src/components/feature/feature4/Feature4.vue"
-                },
-                {
-                    "path": "app/registry/blocks/feature/feature4/index.ts",
-                    "type": "registry:block",
-                    "target": "src/components/feature/feature4/index.ts"
-                }
-            ]
-        },
-        {
-            "name": "feature3",
-            "type": "registry:block",
-            "title": "Feature",
-            "dependencies": [],
-            "registryDependencies": [],
-            "files": [
-                {
-                    "path": "app/registry/blocks/feature/feature3/Feature3.vue",
-                    "type": "registry:block",
-                    "target": "src/components/feature/feature3/Feature3.vue"
-                },
-                {
-                    "path": "app/registry/blocks/feature/feature3/index.ts",
-                    "type": "registry:block",
-                    "target": "src/components/feature/feature3/index.ts"
-                }
-            ]
-        },
-        {
-            "name": "feature2",
-            "type": "registry:block",
-            "title": "Feature",
-            "dependencies": [
-                "@iconify/vue"
-            ],
-            "registryDependencies": [],
-            "files": [
-                {
-                    "path": "app/registry/blocks/feature/feature2/Feature2.vue",
-                    "type": "registry:block",
-                    "target": "src/components/feature/feature2/Feature2.vue"
-                },
-                {
-                    "path": "app/registry/blocks/feature/feature2/index.ts",
-                    "type": "registry:block",
-                    "target": "src/components/feature/feature2/index.ts"
-                }
-            ]
-        },
-        {
-            "name": "feature1",
-            "type": "registry:block",
-            "title": "Feature",
-            "dependencies": [
-                "@iconify/vue"
-            ],
-            "registryDependencies": [],
-            "files": [
-                {
-                    "path": "app/registry/blocks/feature/feature1/Feature1.vue",
-                    "type": "registry:block",
-                    "target": "src/components/feature/feature1/Feature1.vue"
-                },
-                {
-                    "path": "app/registry/blocks/feature/feature1/index.ts",
-                    "type": "registry:block",
-                    "target": "src/components/feature/feature1/index.ts"
-                }
-            ]
-        },
-        {
-            "name": "card2",
-            "type": "registry:block",
-            "title": "Card",
-            "dependencies": [],
-            "registryDependencies": [
-                "button",
-                "badge"
-            ],
-            "files": [
-                {
-                    "path": "app/registry/blocks/card/card2/Card2.vue",
-                    "type": "registry:block",
-                    "target": "src/components/card/card2/Card2.vue"
-                },
-                {
-                    "path": "app/registry/blocks/card/card2/index.ts",
-                    "type": "registry:block",
-                    "target": "src/components/card/card2/index.ts"
+                    "type": "registry:block"
                 }
             ]
         },
@@ -140,13 +45,35 @@
             "files": [
                 {
                     "path": "app/registry/blocks/card/card1/Card1.vue",
-                    "type": "registry:block",
-                    "target": "src/components/card/card1/Card1.vue"
-                },
+                    "type": "registry:block"
+                }
+            ]
+        },
+        {
+            "name": "feature3",
+            "type": "registry:block",
+            "title": "Feature",
+            "dependencies": [],
+            "registryDependencies": [],
+            "files": [
                 {
-                    "path": "app/registry/blocks/card/card1/index.ts",
-                    "type": "registry:block",
-                    "target": "src/components/card/card1/index.ts"
+                    "path": "app/registry/blocks/feature/feature3/Feature3.vue",
+                    "type": "registry:block"
+                }
+            ]
+        },
+        {
+            "name": "feature2",
+            "type": "registry:block",
+            "title": "Feature",
+            "dependencies": [
+                "@iconify/vue"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "app/registry/blocks/feature/feature2/Feature2.vue",
+                    "type": "registry:block"
                 }
             ]
         },
@@ -163,13 +90,22 @@
             "files": [
                 {
                     "path": "app/registry/blocks/footer/footer1/Footer1.vue",
-                    "type": "registry:block",
-                    "target": "src/components/footer/footer1/Footer1.vue"
-                },
+                    "type": "registry:block"
+                }
+            ]
+        },
+        {
+            "name": "cta1",
+            "type": "registry:block",
+            "title": "Cta",
+            "dependencies": [],
+            "registryDependencies": [
+                "button"
+            ],
+            "files": [
                 {
-                    "path": "app/registry/blocks/footer/footer1/index.ts",
-                    "type": "registry:block",
-                    "target": "src/components/footer/footer1/index.ts"
+                    "path": "app/registry/blocks/cta/cta1/Cta1.vue",
+                    "type": "registry:block"
                 }
             ]
         },
@@ -186,13 +122,23 @@
             "files": [
                 {
                     "path": "app/registry/blocks/footer/footer2/Footer2.vue",
-                    "type": "registry:block",
-                    "target": "src/components/footer/footer2/Footer2.vue"
-                },
+                    "type": "registry:block"
+                }
+            ]
+        },
+        {
+            "name": "card2",
+            "type": "registry:block",
+            "title": "Card",
+            "dependencies": [],
+            "registryDependencies": [
+                "button",
+                "badge"
+            ],
+            "files": [
                 {
-                    "path": "app/registry/blocks/footer/footer2/index.ts",
-                    "type": "registry:block",
-                    "target": "src/components/footer/footer2/index.ts"
+                    "path": "app/registry/blocks/card/card2/Card2.vue",
+                    "type": "registry:block"
                 }
             ]
         }

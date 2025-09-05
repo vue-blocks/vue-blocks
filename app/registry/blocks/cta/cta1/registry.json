@@ -10,13 +10,7 @@
     "files": [
         {
             "path": "app/registry/blocks/cta/cta1/Cta1.vue",
-            "type": "registry:block",
-            "target": "src/components/cta/cta1/Cta1.vue"
-        },
-        {
-            "path": "app/registry/blocks/cta/cta1/index.ts",
-            "type": "registry:block",
-            "target": "src/components/cta/cta1/index.ts"
+            "type": "registry:block"
         }
     ],
     "component": "@/registry/blocks/cta/cta1/Cta1.vue",

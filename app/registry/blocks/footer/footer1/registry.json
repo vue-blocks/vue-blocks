@@ -12,13 +12,7 @@
     "files": [
         {
             "path": "app/registry/blocks/footer/footer1/Footer1.vue",
-            "type": "registry:block",
-            "target": "src/components/footer/footer1/Footer1.vue"
-        },
-        {
-            "path": "app/registry/blocks/footer/footer1/index.ts",
-            "type": "registry:block",
-            "target": "src/components/footer/footer1/index.ts"
+            "type": "registry:block"
         }
     ],
     "component": "@/registry/blocks/footer/footer1/Footer1.vue"

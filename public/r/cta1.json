@@ -11,14 +11,7 @@
     {
       "path": "app/registry/blocks/cta/cta1/Cta1.vue",
       "content": "<template>\n    <section class=\"py-32\">\n        <div class=\"container mx-auto\">\n            <div\n                class=\"bg-accent flex w-full flex-col gap-16 overflow-hidden rounded-lg p-8 md:rounded-xl lg:flex-row lg:items-center lg:p-12\"\n            >\n                <div class=\"flex-1\">\n                    <h3 class=\"mb-3 text-2xl font-semibold md:mb-4 md:text-4xl lg:mb-6\">\n                        {{ heading }}\n                    </h3>\n                    <p class=\"text-muted-foreground max-w-xl lg:text-lg\">\n                        {{ description }}\n                    </p>\n                </div>\n                <div class=\"flex shrink-0 flex-col gap-2 sm:flex-row\">\n                    <Button\n                        as-child\n                        size=\"lg\"\n                        variant=\"default\"\n                    >\n                        <a :href=\"buttons.primary.url\">{{ buttons.primary.text }}</a>\n                    </Button>\n                </div>\n            </div>\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nimport { Button } from '@/components/ui/button'\n\nconst heading = 'Call to Action'\nconst description = 'Build faster with our collection of pre-built blocks. Speed up your development and ship features in record time.'\nconst buttons = {\n    primary: {\n        text: 'Buy Now',\n        url: 'https://vue-blocks.dev',\n    },\n}\n</script>\n",
-      "type": "registry:block",
-      "target": "src/components/cta/cta1/Cta1.vue"
-    },
-    {
-      "path": "app/registry/blocks/cta/cta1/index.ts",
-      "content": "export { default as Cta1 } from './Cta1.vue'\n",
-      "type": "registry:block",
-      "target": "src/components/cta/cta1/index.ts"
+      "type": "registry:block"
     }
   ]
 }

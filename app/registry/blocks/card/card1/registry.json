@@ -11,13 +11,7 @@
     "files": [
         {
             "path": "app/registry/blocks/card/card1/Card1.vue",
-            "type": "registry:block",
-            "target": "src/components/card/card1/Card1.vue"
-        },
-        {
-            "path": "app/registry/blocks/card/card1/index.ts",
-            "type": "registry:block",
-            "target": "src/components/card/card1/index.ts"
+            "type": "registry:block"
         }
     ],
     "component": "@/registry/blocks/card/card1/Card1.vue",

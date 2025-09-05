@@ -10,13 +10,7 @@
     "files": [
         {
             "path": "app/registry/blocks/feature/feature1/Feature1.vue",
-            "type": "registry:block",
-            "target": "src/components/feature/feature1/Feature1.vue"
-        },
-        {
-            "path": "app/registry/blocks/feature/feature1/index.ts",
-            "type": "registry:block",
-            "target": "src/components/feature/feature1/index.ts"
+            "type": "registry:block"
         }
     ],
     "component": "@/registry/blocks/feature/feature1/Feature1.vue",
