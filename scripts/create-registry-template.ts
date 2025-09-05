@@ -21,7 +21,7 @@ const registryContent = `{
             "target": "src/components/[block]/${temporaryBlockName}/${temporaryBlockName}.vue"
         },
         {
-            "path": "app/registry/blocks/[block]/${temporaryBlockName}/${temporaryBlockName}/index.ts",
+            "path": "app/registry/blocks/[block]/${temporaryBlockName}/index.ts",
             "type": "registry:block",
             "target": "src/components/[block]/${temporaryBlockName}/index.ts"
         }
