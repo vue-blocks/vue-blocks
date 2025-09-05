@@ -1,37 +1,87 @@
-# Vue Blocks
+<p align="center">
+<a href="https://github.com/vue-blocks/vue-blocks">
+  <img src="https://raw.githubusercontent.com/vue-blocks/vue-blocks/master/public/vue-blocks.svg" alt="VueBlocks - The ultimate front-end building block library specifically designed for Vue" width="300">
+</a>
+<br>
+The ultimate front-end building block library specifically designed for Vue
+</p>
 
-## Setup
+## 🚀 Project Overview
 
-Make sure to install dependencies:
+Vue Blocks is a modern Vue.js component library and development toolkit designed to accelerate UI development. It
+provides a collection of pre-built, customizable components and blocks that follow best practices for performance,
+accessibility, and design consistency.
+
+### ✨Features
+
+- 🚀 **Rapid Development** - pre-built component blocks, ready to use out of the box
+- 🎨 **Aesthetic Design** - elaborately designed modern interface
+- 📱 **Responsive** - perfectly adapted to various device sizes
+- 🔧 **Easy to customize** - flexible configuration and style customization
+- 📦 **Modularization** - introduced on demand to reduce package size
+
+### 🛠️ Tech Stack
+
+- **Framework**: Vue 3 + Nuxt4 + Shadcn/vue
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **Type Safety**: TypeScript
+- **Package Manager**: npm
+
+## 📦 Getting Started
+
+### Development Setup
+
+Follow these steps to set up the development environment:
+
+#### Step 1: Clone the Repository
 
 ```bash
-# npm
+git clone https://github.com/vue-blocks/vue-blocks
+```
+
+#### Step 2: Install Dependencies
+
+```bash
 npm install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+#### Step 3: Start Development Server
 
 ```bash
-# npm
 npm run dev
 ```
 
-## Production
+The development server will start at `http://localhost:3000`
 
-Build the application for production:
+### 🏗️ Adding New Block
+
+To create and register new block modules:
+
+#### Step 1: Complete Development Setup
+
+Ensure you have completed all steps in the "Development Setup" section above.
+
+#### Step 2: Generate Block Template
 
 ```bash
-# npm
-npm run build
+npm run registry:template
 ```
 
-Locally preview production build:
+This command creates a new block module with the standard structure and boilerplate code.
+
+#### Step 3: Register Block Data
 
 ```bash
-# npm
-npm run preview
+npm run build:shadcn:data
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+This command registers the new block with shadcn and generates the necessary site content data.
+
+## 🤝 Contributing
+
+Welcome to submit issues and Pull requests to help improve the project
+
+## 📄 许可证
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
