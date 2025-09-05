@@ -1,0 +1,17 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "footer4",
+  "type": "registry:block",
+  "title": "Footer",
+  "dependencies": [
+    "@iconify/vue"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "app/registry/blocks/footer/footer4/Footer4.vue",
+      "content": "<template>\n    <section class=\"flex flex-col items-center gap-14 py-32\">\n        <nav class=\"container flex flex-col items-center gap-4\">\n            <ul class=\"flex flex-wrap items-center justify-center gap-6\">\n                <li\n                    v-for=\"item in navigation\"\n                    :key=\"item.name\"\n                >\n                    <a\n                        :href=\"item.href\"\n                        class=\"font-medium transition-opacity hover:opacity-75\"\n                    >\n                        {{ item.name }}\n                    </a>\n                </li>\n                <li\n                    v-for=\"item in social\"\n                    :key=\"item.name\"\n                >\n                    <a\n                        :href=\"item.href\"\n                        class=\"flex items-center gap-0.5 font-medium transition-opacity hover:opacity-75\"\n                    >\n                        {{ item.name }}\n                        <Icon\n                            icon=\"lucide:arrow-right\"\n                            class=\"size-4\"\n                        />\n                    </a>\n                </li>\n            </ul>\n            <ul class=\"flex flex-wrap items-center justify-center gap-6\">\n                <li\n                    v-for=\"item in legal\"\n                    :key=\"item.name\"\n                >\n                    <a\n                        :href=\"item.href\"\n                        class=\"text-sm text-muted-foreground transition-opacity hover:opacity-75\"\n                    >\n                        {{ item.name }}\n                    </a>\n                </li>\n            </ul>\n        </nav>\n        <img\n            alt=\"vue blocks\"\n            class=\"mt-10 md:mt-14 lg:mt-20\"\n            height=\"375\"\n            src=\"https://raw.githubusercontent.com/vue-blocks/vue-blocks/refs/heads/master/public/vue-blocks.svg\"\n            width=\"1570\"\n        >\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nimport { Icon } from '@iconify/vue'\n\nconst navigation = [\n    { name: 'Product', href: '#' },\n    { name: 'About Us', href: '#' },\n    { name: 'Pricing', href: '#' },\n    { name: 'FAQ', href: '#' },\n    { name: 'Contact', href: '#' },\n]\n\nconst social = [\n    { name: 'Twitter', href: '#' },\n    { name: 'LinkedIn', href: '#' },\n]\nconst legal = [\n    { name: 'Privacy Policy', href: '#' },\n]\n</script>\n",
+      "type": "registry:block"
+    }
+  ]
+}

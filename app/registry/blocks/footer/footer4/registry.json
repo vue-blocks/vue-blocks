@@ -1,0 +1,17 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "footer4",
+    "type": "registry:block",
+    "title": "Footer",
+    "dependencies": [
+        "@iconify/vue"
+    ],
+    "registryDependencies": [],
+    "files": [
+        {
+            "path": "app/registry/blocks/footer/footer4/Footer4.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/footer/footer4/Footer4.vue"
+}
