@@ -4,48 +4,23 @@
     "homepage": "https://vue-blocks.dev",
     "items": [
         {
-            "name": "footer2",
+            "name": "cta1",
             "type": "registry:block",
-            "title": "Footer",
-            "dependencies": [
-                "@iconify/vue"
-            ],
+            "title": "Cta",
+            "dependencies": [],
             "registryDependencies": [
-                "separator"
+                "button"
             ],
             "files": [
                 {
-                    "path": "app/registry/blocks/footer/footer2/Footer2.vue",
+                    "path": "app/registry/blocks/cta/cta1/Cta1.vue",
                     "type": "registry:block",
-                    "target": "block/footer/footer2/Footer2.vue"
+                    "target": "src/components/cta/cta1/Cta1.vue"
                 },
                 {
-                    "path": "app/registry/blocks/footer/footer2/index.ts",
+                    "path": "app/registry/blocks/cta/cta1/index.ts",
                     "type": "registry:block",
-                    "target": "block/footer/footer2/index.ts"
-                }
-            ]
-        },
-        {
-            "name": "footer1",
-            "type": "registry:block",
-            "title": "Footer",
-            "dependencies": [
-                "@iconify/vue"
-            ],
-            "registryDependencies": [
-                "separator"
-            ],
-            "files": [
-                {
-                    "path": "app/registry/blocks/footer/footer1/Footer1.vue",
-                    "type": "registry:block",
-                    "target": "block/footer/footer1/Footer1.vue"
-                },
-                {
-                    "path": "app/registry/blocks/footer/footer1/index.ts",
-                    "type": "registry:block",
-                    "target": "block/footer/footer1/index.ts"
+                    "target": "src/components/cta/cta1/index.ts"
                 }
             ]
         },
@@ -176,23 +151,48 @@
             ]
         },
         {
-            "name": "cta1",
+            "name": "footer1",
             "type": "registry:block",
-            "title": "Cta",
-            "dependencies": [],
+            "title": "Footer",
+            "dependencies": [
+                "@iconify/vue"
+            ],
             "registryDependencies": [
-                "button"
+                "separator"
             ],
             "files": [
                 {
-                    "path": "app/registry/blocks/cta/cta1/Cta1.vue",
+                    "path": "app/registry/blocks/footer/footer1/Footer1.vue",
                     "type": "registry:block",
-                    "target": "src/components/cta/cta1/Cta1.vue"
+                    "target": "src/components/footer/footer1/Footer1.vue"
                 },
                 {
-                    "path": "app/registry/blocks/cta/cta1/index.ts",
+                    "path": "app/registry/blocks/footer/footer1/index.ts",
                     "type": "registry:block",
-                    "target": "src/components/cta/cta1/index.ts"
+                    "target": "src/components/footer/footer1/index.ts"
+                }
+            ]
+        },
+        {
+            "name": "footer2",
+            "type": "registry:block",
+            "title": "Footer",
+            "dependencies": [
+                "@iconify/vue"
+            ],
+            "registryDependencies": [
+                "separator"
+            ],
+            "files": [
+                {
+                    "path": "app/registry/blocks/footer/footer2/Footer2.vue",
+                    "type": "registry:block",
+                    "target": "src/components/footer/footer2/Footer2.vue"
+                },
+                {
+                    "path": "app/registry/blocks/footer/footer2/index.ts",
+                    "type": "registry:block",
+                    "target": "src/components/footer/footer2/index.ts"
                 }
             ]
         }
