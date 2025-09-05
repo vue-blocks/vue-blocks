@@ -82,6 +82,6 @@ This command registers the new block with shadcn and generates the necessary sit
 
 Welcome to submit issues and Pull requests to help improve the project
 
-## 📄 许可证
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
