@@ -1,0 +1,22 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "feature3",
+  "type": "registry:block",
+  "title": "Feature",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "app/registry/blocks/feature/feature3/Feature3.vue",
+      "content": "<template>\n    <section class=\"py-32\">\n        <div class=\"container mx-auto\">\n            <div class=\"grid gap-8 lg:grid-cols-3\">\n                <h2 class=\"row-span-2 text-3xl font-semibold lg:text-5xl\">\n                    Our Values and Principles\n                </h2>\n                <div>\n                    <h3 class=\"mb-2 text-xl font-medium\">\n                        Team Spirit\n                    </h3>\n                    <p class=\"text-muted-foreground\">\n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit\n                        architecto atque consequuntur perferendis ratione dolorem vitae,\n                        doloribus facere.\n                    </p>\n                </div>\n                <div>\n                    <h3 class=\"mb-2 text-xl font-medium\">\n                        Innovation\n                    </h3>\n                    <p class=\"text-muted-foreground\">\n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit\n                        architecto atque consequuntur perferendis ratione dolorem vitae,\n                        doloribus facere.\n                    </p>\n                </div>\n                <div>\n                    <h3 class=\"mb-2 text-xl font-medium\">\n                        Quality\n                    </h3>\n                    <p class=\"text-muted-foreground\">\n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit\n                        architecto atque consequuntur perferendis ratione dolorem vitae,\n                        doloribus facere.\n                    </p>\n                </div>\n                <div>\n                    <h3 class=\"mb-2 text-xl font-medium\">\n                        Integrity\n                    </h3>\n                    <p class=\"text-muted-foreground\">\n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit\n                        architecto atque consequuntur perferendis ratione dolorem vitae,\n                        doloribus facere.\n                    </p>\n                </div>\n            </div>\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\n</script>\n",
+      "type": "registry:block",
+      "target": "src/components/feature/feature3/Feature3.vue"
+    },
+    {
+      "path": "app/registry/blocks/feature/feature3/index.ts",
+      "content": "export { default as Feature3 } from './Feature3.vue'\n",
+      "type": "registry:block",
+      "target": "src/components/feature/feature3/index.ts"
+    }
+  ]
+}
