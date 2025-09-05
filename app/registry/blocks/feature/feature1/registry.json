@@ -1,0 +1,25 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "feature1",
+    "type": "registry:block",
+    "title": "Feature",
+    "dependencies": [
+        "@iconify/vue"
+    ],
+    "registryDependencies": [],
+    "files": [
+        {
+            "path": "app/registry/blocks/feature/feature1/feature1.vue",
+            "type": "registry:block",
+            "target": "src/components/feature/feature1/feature1.vue"
+        },
+        {
+            "path": "app/registry/blocks/feature/feature1/index.ts",
+            "type": "registry:block",
+            "target": "src/components/feature/feature1/index.ts"
+        }
+    ],
+    "component": "@/registry/blocks/feature/feature1/feature1.vue",
+    "className": []
+}
+

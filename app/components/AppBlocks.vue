@@ -54,6 +54,11 @@ defineOptions({
 
 const blocks = [
     {
+        title: 'Feature',
+        screenshots: '/screenshots/block/feature1.png',
+        alias: '/blocks/#feature',
+    },
+    {
         title: 'Card',
         screenshots: '/screenshots/block/card1.png',
         alias: '/blocks/#card',

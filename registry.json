@@ -50,6 +50,28 @@
             ]
         },
         {
+            "name": "card1",
+            "type": "registry:block",
+            "title": "Card",
+            "dependencies": [],
+            "registryDependencies": [
+                "button",
+                "badge"
+            ],
+            "files": [
+                {
+                    "path": "app/registry/blocks/card/card1/Card1.vue",
+                    "type": "registry:block",
+                    "target": "src/components/card/card1/Card1.vue"
+                },
+                {
+                    "path": "app/registry/blocks/card/card1/index.ts",
+                    "type": "registry:block",
+                    "target": "src/components/card/card1/index.ts"
+                }
+            ]
+        },
+        {
             "name": "card2",
             "type": "registry:block",
             "title": "Card",
@@ -72,24 +94,23 @@
             ]
         },
         {
-            "name": "card1",
+            "name": "feature1",
             "type": "registry:block",
-            "title": "Card",
-            "dependencies": [],
-            "registryDependencies": [
-                "button",
-                "badge"
+            "title": "Feature",
+            "dependencies": [
+                "@iconify/vue"
             ],
+            "registryDependencies": [],
             "files": [
                 {
-                    "path": "app/registry/blocks/card/card1/Card1.vue",
+                    "path": "app/registry/blocks/feature/feature1/feature1.vue",
                     "type": "registry:block",
-                    "target": "src/components/card/card1/Card1.vue"
+                    "target": "src/components/feature/feature1/feature1.vue"
                 },
                 {
-                    "path": "app/registry/blocks/card/card1/index.ts",
+                    "path": "app/registry/blocks/feature/feature1/index.ts",
                     "type": "registry:block",
-                    "target": "src/components/card/card1/index.ts"
+                    "target": "src/components/feature/feature1/index.ts"
                 }
             ]
         }
