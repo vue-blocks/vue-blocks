@@ -22,44 +22,16 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 gap-2 md:gap-8 xl:gap-12 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-            <NuxtLink
-                v-for="item in blocks"
-                :key="item.title"
-                :class="cn(
-                    'p-px',
-                    'transition-all duration-200',
-                    'group rounded-xl',
-                    'bg-linear-to-b from-gray-200 to-white',
-                    // 'dark:from-gray-800 dark:to-gray-900/80',
-                    // 'hover:from-blue-300 dark:hover:bg-blue-400',
-                )"
-                target="_blank"
-            >
-                <div
-                    :class="cn(
-                        'p-3 rounded-xl',
-                        'bg-white dark:bg-gray-950/80 dark:group-hover:bg-gray-950/70',
-                        'transition-all duration-500 hover:bg-accent/20',
-                    )"
-                >
-                    <img
-                        :alt="item.title"
-                        :src="item.thumbnail"
-                        class="size-full rounded-xl"
-                    >
-                    <div class="flex items-start justify-between px-2 pt-4 pb-2">
-                        <h3
-                            :class="cn(
-                                'text-lg font-medium',
-                                'transition-all duration-500',
-                                'dark:text-muted',
-                                // 'group-hover:text-blue-700 dark:group-hover:text-blue-600',
-                            )"
-                        >{{ item.title }}</h3>
-                        <p class="text-sm text-muted-foreground">{{ item.components }} components</p></div>
-                </div>
-            </NuxtLink>
+        <div
+            class="grid grid-cols-1 gap-2 md:gap-8 xl:gap-12 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
+        >
+            <BlockCard
+                v-for="block in blocks"
+                :key="block.title"
+                :module="block.title"
+                :screenshots="block.screenshots"
+                :url="block.alias"
+            />
         </div>
         <div class="mt-6 flex flex-wrap items-center justify-center gap-x-2">
             <Button as-child>
@@ -74,6 +46,7 @@
 <script lang="ts" setup>
 import { Button } from '~/components/ui/button'
 import { cn } from '~/lib/utils'
+import BlockCard from '~/components/block/BlockCard.vue'
 
 defineOptions({
     name: 'AppBlocks',
@@ -81,104 +54,14 @@ defineOptions({
 
 const blocks = [
     {
-        title: 'Headers (Navbar)',
-        components: 20,
-        thumbnail: 'https://htmlstream.com/preview/front-v4.3.1/assets/svg/design-system/snippets-navbar.svg',
+        title: 'Card',
+        screenshots: '/screenshots/block/card1.png',
+        alias: '/blocks/#card',
     },
     {
-        title: 'Hero Sections',
-        components: 20,
-        thumbnail: 'https://preline.co/assets/thumbnails/examples/hero-sections.webp',
-    },
-    {
-        title: 'Features General',
-        components: 20,
-        thumbnail: 'https://htmlstream.com/preview/front-v4.3.1/assets/svg/design-system/snippets-features-general.svg',
-    },
-    {
-        title: 'Features Stats',
-        components: 20,
-        thumbnail: 'https://htmlstream.com/preview/front-v4.3.1/assets/svg/design-system/snippets-features-stats.svg',
-    },
-    {
-        title: 'Features Step',
-        components: 20,
-        thumbnail: 'https://htmlstream.com/preview/front-v4.3.1/assets/svg/design-system/snippets-features-step.svg',
-    },
-    {
-        title: 'Features Navs (Tabs)',
-        components: 20,
-        thumbnail: 'https://htmlstream.com/preview/front-v4.3.1/assets/svg/design-system/snippets-features-navs.svg',
-    },
-    {
-        title: 'Icon Blocks',
-        components: 20,
-        thumbnail: 'https://htmlstream.com/preview/front-v4.3.1/assets/svg/design-system/snippets-icon-blocks.svg',
-    },
-    {
-        title: 'Cards (Grid)',
-        components: 20,
-        thumbnail: 'https://htmlstream.com/preview/front-v4.3.1/assets/svg/design-system/snippets-cards-grid.svg',
-    },
-    {
-        title: 'Authentication',
-        components: 20,
-        thumbnail: 'https://htmlstream.com/preview/front-v4.3.1/assets/svg/design-system/snippets-forms-authentication.svg',
-    },
-    {
-        title: 'Feedback',
-        components: 20,
-        thumbnail: 'https://htmlstream.com/preview/front-v4.3.1/assets/svg/design-system/snippets-forms-feedback.svg',
-    },
-    {
-        title: 'Headers (Navbar)',
-        components: 20,
-        thumbnail: 'https://htmlstream.com/preview/front-v4.3.1/assets/svg/design-system/snippets-navbar.svg',
-    },
-    {
-        title: 'Hero Sections',
-        components: 20,
-        thumbnail: 'https://preline.co/assets/thumbnails/examples/hero-sections.webp',
-    },
-    {
-        title: 'Features General',
-        components: 20,
-        thumbnail: 'https://htmlstream.com/preview/front-v4.3.1/assets/svg/design-system/snippets-features-general.svg',
-    },
-    {
-        title: 'Features Stats',
-        components: 20,
-        thumbnail: 'https://htmlstream.com/preview/front-v4.3.1/assets/svg/design-system/snippets-features-stats.svg',
-    },
-    {
-        title: 'Features Step',
-        components: 20,
-        thumbnail: 'https://htmlstream.com/preview/front-v4.3.1/assets/svg/design-system/snippets-features-step.svg',
-    },
-    {
-        title: 'Features Navs (Tabs)',
-        components: 20,
-        thumbnail: 'https://htmlstream.com/preview/front-v4.3.1/assets/svg/design-system/snippets-features-navs.svg',
-    },
-    {
-        title: 'Icon Blocks',
-        components: 20,
-        thumbnail: 'https://htmlstream.com/preview/front-v4.3.1/assets/svg/design-system/snippets-icon-blocks.svg',
-    },
-    {
-        title: 'Cards (Grid)',
-        components: 20,
-        thumbnail: 'https://htmlstream.com/preview/front-v4.3.1/assets/svg/design-system/snippets-cards-grid.svg',
-    },
-    {
-        title: 'Authentication',
-        components: 20,
-        thumbnail: 'https://htmlstream.com/preview/front-v4.3.1/assets/svg/design-system/snippets-forms-authentication.svg',
-    },
-    {
-        title: 'Feedback',
-        components: 20,
-        thumbnail: 'https://htmlstream.com/preview/front-v4.3.1/assets/svg/design-system/snippets-forms-feedback.svg',
+        title: 'Footer',
+        screenshots: '/screenshots/block/footer1.png',
+        alias: '/blocks/#footer',
     },
 ]
 </script>
