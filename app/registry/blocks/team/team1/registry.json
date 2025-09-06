@@ -10,8 +10,7 @@
     "files": [
         {
             "path": "app/registry/blocks/team/team1/Team1.vue",
-            "type": "registry:block",
-            "target": "src/components/team/team1/Team1.vue"
+            "type": "registry:block"
         }
     ],
     "component": "@/registry/blocks/team/team1/Team1.vue",

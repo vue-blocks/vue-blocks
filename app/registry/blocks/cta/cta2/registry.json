@@ -8,8 +8,7 @@
     "files": [
         {
             "path": "app/registry/blocks/cta/cta2/Cta2.vue",
-            "type": "registry:block",
-            "target": "src/components/cta/cta2/Cta2.vue"
+            "type": "registry:block"
         }
     ],
     "component": "@/registry/blocks/cta/cta2/Cta2.vue",

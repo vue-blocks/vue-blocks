@@ -12,8 +12,7 @@
     "files": [
         {
             "path": "app/registry/blocks/cta/cta3/Cta3.vue",
-            "type": "registry:block",
-            "target": "src/components/cta/cta3/Cta3.vue"
+            "type": "registry:block"
         }
     ],
     "component": "@/registry/blocks/cta/cta3/Cta3.vue",

@@ -12,8 +12,7 @@
     "files": [
         {
             "path": "app/registry/blocks/team/team2/Team2.vue",
-            "type": "registry:block",
-            "target": "src/components/team/team2/Team2.vue"
+            "type": "registry:block"
         }
     ],
     "component": "@/registry/blocks/team/team2/Team2.vue",
