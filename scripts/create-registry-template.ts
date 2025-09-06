@@ -16,8 +16,7 @@ const registryContent = `{
     "files": [
         {
             "path": "app/registry/blocks/[block]/${temporaryBlockName}/${temporaryBlockName}.vue",
-            "type": "registry:block",
-            "target": "src/components/[block]/${temporaryBlockName}/${temporaryBlockName}.vue"
+            "type": "registry:block"
         }
     ],
     "component": "@/registry/blocks/[block]/${temporaryBlockName}/${temporaryBlockName}.vue",
