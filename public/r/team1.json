@@ -4,11 +4,13 @@
   "type": "registry:block",
   "title": "team",
   "dependencies": [],
-  "registryDependencies": [],
+  "registryDependencies": [
+    "avatar"
+  ],
   "files": [
     {
       "path": "app/registry/blocks/team/team1/Team1.vue",
-      "content": "<template>\n    <!-- ToDo -->\n</template>\n\n<script lang=\"ts\" setup>\n</script>\n",
+      "content": "<template>\n    <section class=\"py-32\">\n        <div class=\"container flex flex-col items-center text-center\">\n            <h2 class=\"my-6 text-pretty text-2xl font-bold lg:text-4xl\">\n                {{ heading }}\n            </h2>\n            <p class=\"text-muted-foreground mb-8 max-w-3xl lg:text-xl\">\n                {{ description }}\n            </p>\n        </div>\n        <div class=\"container mt-16 grid gap-x-8 gap-y-16 md:grid-cols-2 lg:grid-cols-3\">\n            <div\n                v-for=\"member in members\"\n                :key=\"member.id\"\n                class=\"flex flex-col items-center\"\n            >\n                <Avatar class=\"mb-4 size-20 border md:mb-5 lg:size-24\">\n                    <AvatarImage :src=\"member.avatar\" />\n                    <AvatarFallback>{{ member.name }}</AvatarFallback>\n                </Avatar>\n                <p class=\"text-center font-medium\">\n                    {{ member.name }}\n                </p>\n                <p class=\"text-muted-foreground text-center\">\n                    {{ member.role }}\n                </p>\n            </div>\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nimport { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'\n\nconst heading = 'Team'\nconst description = 'Our diverse team of experts brings together decades of experience in design, engineering, and product development.'\n\nconst members = [\n    {\n        id: 'member-1',\n        name: 'Sarah Chen',\n        role: 'CEO & Founder',\n        avatar: 'https://mockmind-api.uifaces.co/content/human/80.jpg',\n    },\n    {\n        id: 'member-2',\n        name: 'Marcus Rodriguez',\n        role: 'CTO',\n        avatar: 'https://mockmind-api.uifaces.co/content/human/125.jpg',\n    },\n    {\n        id: 'member-3',\n        name: 'Emily Watson',\n        role: 'Head of Design',\n        avatar: 'https://mockmind-api.uifaces.co/content/human/104.jpg',\n    },\n    {\n        id: 'member-4',\n        name: 'David Kim',\n        role: 'Lead Engineer',\n        avatar: 'https://mockmind-api.uifaces.co/content/human/108.jpg',\n    },\n    {\n        id: 'member-5',\n        name: 'Lisa Thompson',\n        role: 'Product Manager',\n        avatar: 'https://mockmind-api.uifaces.co/content/human/92.jpg',\n    },\n    {\n        id: 'member-6',\n        name: 'Alex Johnson',\n        role: 'UX Designer',\n        avatar: 'https://mockmind-api.uifaces.co/content/human/91.jpg',\n    },\n]\n</script>\n",
       "type": "registry:block",
       "target": "src/components/team/team1/Team1.vue"
     }
