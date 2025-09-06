@@ -134,6 +134,12 @@
     --sidebar-ring: oklch(0.439 0 0);
 }
 
+
+@utility container {
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
 @layer base {
     * {
         @apply border-border outline-ring/50;
@@ -151,10 +157,6 @@
 
     #__nuxt {
         @apply relative min-h-screen;
-    }
-
-    .container {
-        @apply mx-auto px-8;
     }
 
     [data-line-codeblock] code {
