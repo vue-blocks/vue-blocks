@@ -5,7 +5,7 @@
                 <h2 class="text-3xl lg:text-5xl font-bold mb-4 lg:mb-8">
                     Redefine, the power of construction.
                 </h2>
-                <p class="text-2xl leading-1 font-semibold text-muted-foreground">
+                <p class="text-2xl font-semibold text-muted-foreground">
                     Let creativity no longer be restricted. Faster setup speed, a more flexible component system, and a purer development experience.
                 </p>
 
