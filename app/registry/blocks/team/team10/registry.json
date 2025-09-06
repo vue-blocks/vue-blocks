@@ -1,0 +1,20 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "team10",
+    "type": "registry:block",
+    "title": "team",
+    "dependencies": [],
+    "registryDependencies": [
+        "avatar",
+        "button"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/team/team10/Team10.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/team/team10/Team10.vue",
+    "className": []
+}
+
