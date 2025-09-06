@@ -9,8 +9,7 @@
     {
       "path": "app/registry/blocks/cta/cta2/Cta2.vue",
       "content": "<template>\n    <section class=\"py-32\">\n        <div class=\"container mx-auto\">\n            <div\n                class=\"bg-accent flex w-full flex-col gap-16 overflow-hidden rounded-lg p-8 md:rounded-xl lg:flex-row lg:items-center lg:p-12\"\n            >\n                <div class=\"flex-1\">\n                    <h3 class=\"mb-3 text-2xl font-semibold md:mb-4 md:text-4xl lg:mb-6\">\n                        {{ heading }}\n                    </h3>\n                    <p class=\"text-muted-foreground max-w-xl lg:text-lg\">\n                        {{ description }}\n                    </p>\n                </div>\n                <div class=\"shrink-0\">\n                    <div class=\"flex flex-col justify-center gap-4 sm:flex-row sm:items-center\">\n                        <div class=\"relative h-32 w-32 overflow-hidden rounded-lg sm:h-40 sm:w-40\">\n                            <img\n                                :alt=\"imageAlt\"\n                                class=\"object-cover\"\n                                :src=\"imageSrc\"\n                            >\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nconst heading = 'Call to Action'\nconst description = 'Build faster with our collection of pre-built blocks. Speed up your development and ship features in record time.'\nconst imageSrc = 'https://plus.unsplash.com/premium_photo-1669075651524-bf31ee878d1a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHZ1ZWJsb2NrfGVufDB8fDB8fHww'\nconst imageAlt = 'Call to action image'\n</script>\n",
-      "type": "registry:block",
-      "target": "src/components/cta/cta2/Cta2.vue"
+      "type": "registry:block"
     }
   ]
 }
