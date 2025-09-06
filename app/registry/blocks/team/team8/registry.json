@@ -1,17 +1,20 @@
 {
     "$schema": "https://shadcn-vue.com/schema/registry-item.json",
-    "name": "team7",
+    "name": "team8",
     "type": "registry:block",
     "title": "team",
     "dependencies": [],
-    "registryDependencies": [],
+    "registryDependencies": [
+        "carousel",
+        "separator"
+    ],
     "files": [
         {
-            "path": "app/registry/blocks/team/team7/Team7.vue",
+            "path": "app/registry/blocks/team/team8/Team8.vue",
             "type": "registry:block"
         }
     ],
-    "component": "@/registry/blocks/team/team7/Team7.vue",
+    "component": "@/registry/blocks/team/team8/Team8.vue",
     "className": []
 }
 

@@ -4,12 +4,7 @@
   "type": "registry:block",
   "title": "team",
   "dependencies": [],
-  "registryDependencies": [
-    "badge",
-    "avatar",
-    "button",
-    "card"
-  ],
+  "registryDependencies": [],
   "files": [
     {
       "path": "app/registry/blocks/team/team7/Team7.vue",
