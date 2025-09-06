@@ -1,4 +1,18 @@
 export const blocks = {
+    team7: {
+        files: [
+            {
+                name: 'Team7',
+                target: 'pages/index.vue',
+                path: '@/registry/blocks/team/team7/Team7.vue',
+                raw: () => import('@/registry/blocks/team/team7/Team7.vue?raw').then(m => m.default),
+            },
+        ],
+        className: '',
+        component: () => import('@/registry/blocks/team/team7/Team7.vue').then(m => m.default),
+        raw: () => import('@/registry/blocks/team/team7/Team7.vue?raw').then(m => m.default),
+    },
+
     team6: {
         files: [
             {
@@ -55,6 +69,20 @@ export const blocks = {
         raw: () => import('@/registry/blocks/team/team3/Team3.vue?raw').then(m => m.default),
     },
 
+    team1: {
+        files: [
+            {
+                name: 'Team1',
+                target: 'pages/index.vue',
+                path: '@/registry/blocks/team/team1/Team1.vue',
+                raw: () => import('@/registry/blocks/team/team1/Team1.vue?raw').then(m => m.default),
+            },
+        ],
+        className: '',
+        component: () => import('@/registry/blocks/team/team1/Team1.vue').then(m => m.default),
+        raw: () => import('@/registry/blocks/team/team1/Team1.vue?raw').then(m => m.default),
+    },
+
     team2: {
         files: [
             {
@@ -67,6 +95,62 @@ export const blocks = {
         className: '',
         component: () => import('@/registry/blocks/team/team2/Team2.vue').then(m => m.default),
         raw: () => import('@/registry/blocks/team/team2/Team2.vue?raw').then(m => m.default),
+    },
+
+    footer4: {
+        files: [
+            {
+                name: 'Footer4',
+                target: 'pages/index.vue',
+                path: '@/registry/blocks/footer/footer4/Footer4.vue',
+                raw: () => import('@/registry/blocks/footer/footer4/Footer4.vue?raw').then(m => m.default),
+            },
+        ],
+        className: '',
+        component: () => import('@/registry/blocks/footer/footer4/Footer4.vue').then(m => m.default),
+        raw: () => import('@/registry/blocks/footer/footer4/Footer4.vue?raw').then(m => m.default),
+    },
+
+    footer3: {
+        files: [
+            {
+                name: 'Footer3',
+                target: 'pages/index.vue',
+                path: '@/registry/blocks/footer/footer3/Footer3.vue',
+                raw: () => import('@/registry/blocks/footer/footer3/Footer3.vue?raw').then(m => m.default),
+            },
+        ],
+        className: '',
+        component: () => import('@/registry/blocks/footer/footer3/Footer3.vue').then(m => m.default),
+        raw: () => import('@/registry/blocks/footer/footer3/Footer3.vue?raw').then(m => m.default),
+    },
+
+    footer2: {
+        files: [
+            {
+                name: 'Footer2',
+                target: 'pages/index.vue',
+                path: '@/registry/blocks/footer/footer2/Footer2.vue',
+                raw: () => import('@/registry/blocks/footer/footer2/Footer2.vue?raw').then(m => m.default),
+            },
+        ],
+        className: '',
+        component: () => import('@/registry/blocks/footer/footer2/Footer2.vue').then(m => m.default),
+        raw: () => import('@/registry/blocks/footer/footer2/Footer2.vue?raw').then(m => m.default),
+    },
+
+    footer1: {
+        files: [
+            {
+                name: 'Footer1',
+                target: 'pages/index.vue',
+                path: '@/registry/blocks/footer/footer1/Footer1.vue',
+                raw: () => import('@/registry/blocks/footer/footer1/Footer1.vue?raw').then(m => m.default),
+            },
+        ],
+        className: '',
+        component: () => import('@/registry/blocks/footer/footer1/Footer1.vue').then(m => m.default),
+        raw: () => import('@/registry/blocks/footer/footer1/Footer1.vue?raw').then(m => m.default),
     },
 
     cta3: {
@@ -137,76 +221,6 @@ export const blocks = {
         className: 'min-w-screen,min-h-screen,flex,justify-center,items-center',
         component: () => import('@/registry/blocks/card/card1/Card1.vue').then(m => m.default),
         raw: () => import('@/registry/blocks/card/card1/Card1.vue?raw').then(m => m.default),
-    },
-
-    team1: {
-        files: [
-            {
-                name: 'Team1',
-                target: 'pages/index.vue',
-                path: '@/registry/blocks/team/team1/Team1.vue',
-                raw: () => import('@/registry/blocks/team/team1/Team1.vue?raw').then(m => m.default),
-            },
-        ],
-        className: '',
-        component: () => import('@/registry/blocks/team/team1/Team1.vue').then(m => m.default),
-        raw: () => import('@/registry/blocks/team/team1/Team1.vue?raw').then(m => m.default),
-    },
-
-    footer4: {
-        files: [
-            {
-                name: 'Footer4',
-                target: 'pages/index.vue',
-                path: '@/registry/blocks/footer/footer4/Footer4.vue',
-                raw: () => import('@/registry/blocks/footer/footer4/Footer4.vue?raw').then(m => m.default),
-            },
-        ],
-        className: '',
-        component: () => import('@/registry/blocks/footer/footer4/Footer4.vue').then(m => m.default),
-        raw: () => import('@/registry/blocks/footer/footer4/Footer4.vue?raw').then(m => m.default),
-    },
-
-    footer3: {
-        files: [
-            {
-                name: 'Footer3',
-                target: 'pages/index.vue',
-                path: '@/registry/blocks/footer/footer3/Footer3.vue',
-                raw: () => import('@/registry/blocks/footer/footer3/Footer3.vue?raw').then(m => m.default),
-            },
-        ],
-        className: '',
-        component: () => import('@/registry/blocks/footer/footer3/Footer3.vue').then(m => m.default),
-        raw: () => import('@/registry/blocks/footer/footer3/Footer3.vue?raw').then(m => m.default),
-    },
-
-    footer2: {
-        files: [
-            {
-                name: 'Footer2',
-                target: 'pages/index.vue',
-                path: '@/registry/blocks/footer/footer2/Footer2.vue',
-                raw: () => import('@/registry/blocks/footer/footer2/Footer2.vue?raw').then(m => m.default),
-            },
-        ],
-        className: '',
-        component: () => import('@/registry/blocks/footer/footer2/Footer2.vue').then(m => m.default),
-        raw: () => import('@/registry/blocks/footer/footer2/Footer2.vue?raw').then(m => m.default),
-    },
-
-    footer1: {
-        files: [
-            {
-                name: 'Footer1',
-                target: 'pages/index.vue',
-                path: '@/registry/blocks/footer/footer1/Footer1.vue',
-                raw: () => import('@/registry/blocks/footer/footer1/Footer1.vue?raw').then(m => m.default),
-            },
-        ],
-        className: '',
-        component: () => import('@/registry/blocks/footer/footer1/Footer1.vue').then(m => m.default),
-        raw: () => import('@/registry/blocks/footer/footer1/Footer1.vue?raw').then(m => m.default),
     },
 
     feature4: {

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "team7",
+  "type": "registry:block",
+  "title": "team",
+  "dependencies": [],
+  "registryDependencies": [
+    "badge",
+    "avatar",
+    "button",
+    "card"
+  ],
+  "files": [
+    {
+      "path": "app/registry/blocks/team/team7/Team7.vue",
+      "content": "<template>\n    <section class=\"py-32\">\n        <div class=\"container\">\n            <h2 class=\"text-4xl font-medium tracking-wide text-primary\">\n                Our investors\n            </h2>\n            <div class=\"mt-8 grid grid-cols-2 gap-12 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5\">\n                <div\n                    v-for=\"investor in team\"\n                    :key=\"investor.name\"\n                    class=\"\"\n                >\n                    <img\n                        :alt=\"investor.name\"\n                        :src=\"investor.image\"\n                        class=\"size-32 rounded-full object-cover\"\n                    >\n                    <h3 class=\"mt-3 font-semibold\">\n                        {{ investor.name }}\n                    </h3>\n                    <p class=\"text-muted-foreground\">\n                        {{ investor.company }}\n                    </p>\n                </div>\n            </div>\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nconst team = [\n    {\n        name: 'Dennis Bouvard',\n        company: 'Blackbird Ventures',\n        image: 'https://mockmind-api.uifaces.co/content/human/104.jpg',\n    },\n    {\n        name: 'Renatus Gerard',\n        company: 'Center Studies',\n        image: 'https://mockmind-api.uifaces.co/content/human/92.jpg',\n    },\n    {\n        name: 'Leslie Alexander',\n        company: 'TechNexus',\n        image: 'https://mockmind-api.uifaces.co/content/human/221.jpg',\n    },\n    {\n        name: 'Matthew Stephens',\n        company: 'Etymol Cap',\n        image: 'https://mockmind-api.uifaces.co/content/human/218.jpg',\n    },\n    {\n        name: 'Josephine Newman',\n        company: 'Vandenberg',\n        image: 'https://mockmind-api.uifaces.co/content/human/217.jpg',\n    },\n]\n</script>\n",
+      "type": "registry:block"
+    }
+  ]
+}

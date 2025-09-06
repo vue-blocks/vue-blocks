@@ -4,7 +4,7 @@
     "homepage": "https://vue-blocks.dev",
     "items": [
         {
-            "name": "team6",
+            "name": "team7",
             "type": "registry:block",
             "title": "team",
             "dependencies": [],
@@ -13,6 +13,23 @@
                 "avatar",
                 "button",
                 "card"
+            ],
+            "files": [
+                {
+                    "path": "app/registry/blocks/team/team7/Team7.vue",
+                    "type": "registry:block"
+                }
+            ]
+        },
+        {
+            "name": "team6",
+            "type": "registry:block",
+            "title": "team",
+            "dependencies": [],
+            "registryDependencies": [
+                "badge",
+                "avatar",
+                "button"
             ],
             "files": [
                 {
@@ -57,23 +74,6 @@
             ]
         },
         {
-            "name": "team2",
-            "type": "registry:block",
-            "title": "team",
-            "dependencies": [
-                "@iconify/vue"
-            ],
-            "registryDependencies": [
-                "avatar"
-            ],
-            "files": [
-                {
-                    "path": "app/registry/blocks/team/team2/Team2.vue",
-                    "type": "registry:block"
-                }
-            ]
-        },
-        {
             "name": "team3",
             "type": "registry:block",
             "title": "team",
@@ -86,6 +86,36 @@
             "files": [
                 {
                     "path": "app/registry/blocks/team/team3/Team3.vue",
+                    "type": "registry:block"
+                }
+            ]
+        },
+        {
+            "name": "team1",
+            "type": "registry:block",
+            "title": "team",
+            "dependencies": [],
+            "registryDependencies": [
+                "avatar"
+            ],
+            "files": [
+                {
+                    "path": "app/registry/blocks/team/team1/Team1.vue",
+                    "type": "registry:block"
+                }
+            ]
+        },
+        {
+            "name": "footer4",
+            "type": "registry:block",
+            "title": "Footer",
+            "dependencies": [
+                "@iconify/vue"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "app/registry/blocks/footer/footer4/Footer4.vue",
                     "type": "registry:block"
                 }
             ]
@@ -153,31 +183,18 @@
             ]
         },
         {
-            "name": "team1",
+            "name": "team2",
             "type": "registry:block",
             "title": "team",
-            "dependencies": [],
+            "dependencies": [
+                "@iconify/vue"
+            ],
             "registryDependencies": [
                 "avatar"
             ],
             "files": [
                 {
-                    "path": "app/registry/blocks/team/team1/Team1.vue",
-                    "type": "registry:block"
-                }
-            ]
-        },
-        {
-            "name": "footer4",
-            "type": "registry:block",
-            "title": "Footer",
-            "dependencies": [
-                "@iconify/vue"
-            ],
-            "registryDependencies": [],
-            "files": [
-                {
-                    "path": "app/registry/blocks/footer/footer4/Footer4.vue",
+                    "path": "app/registry/blocks/team/team2/Team2.vue",
                     "type": "registry:block"
                 }
             ]
