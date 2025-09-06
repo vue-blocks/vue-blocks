@@ -153,6 +153,10 @@
         @apply relative min-h-screen;
     }
 
+    .container {
+        @apply mx-auto px-8;
+    }
+
     [data-line-codeblock] code {
         display: grid;
         min-width: 100%;
