@@ -136,7 +136,9 @@ import BlockPreview from '~/components/block/BlockPreview.vue'
 import BlockContributors from '~/components/block/BlockContributors.vue'
 import BlockCode from '~/components/block/BlockCode.vue'
 import type { BlockKey, IBlock } from '~/types/blocks'
-import { blocks } from '~/data/blocks'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error virtual
+import blocks from 'virtual-blocks'
 import BlockNpmCli from '~/components/block/BlockNpmCli.vue'
 import BlockCallbackIssues from '~/components/block/BlockCallbackIssues.vue'
 

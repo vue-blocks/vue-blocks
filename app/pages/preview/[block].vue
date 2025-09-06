@@ -12,7 +12,9 @@
 </template>
 
 <script lang="ts" setup>
-import { blocks } from '~/data/blocks'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error virtual
+import blocks from 'virtual-blocks'
 import type { BlockKey } from '~/types/blocks'
 import { cn } from '~/lib/utils'
 import { useUrlSearchParams } from '@vueuse/core'

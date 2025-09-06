@@ -1,6 +1,6 @@
-import type { blocks } from '~/data/blocks'
+import type blocks from 'virtual-blocks'
 
-export type BlockKey = keyof typeof blocks
+export type BlockKey = Extract<keyof typeof blocks, string>
 
 export interface IBlockPaths {
     name: string
