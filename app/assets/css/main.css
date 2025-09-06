@@ -140,6 +140,15 @@
     padding-inline: 2rem;
 }
 
+@layer components {
+    button {
+        cursor: pointer;
+    }
+    [class*="border"] {
+        @apply border-border;
+    }
+}
+
 @layer base {
     * {
         @apply border-border outline-ring/50;
