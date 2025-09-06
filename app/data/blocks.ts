@@ -1,4 +1,18 @@
 export const blocks = {
+    team5: {
+        files: [
+            {
+                name: 'Team5',
+                target: 'pages/index.vue',
+                path: '@/registry/blocks/team/team5/Team5.vue',
+                raw: () => import('@/registry/blocks/team/team5/Team5.vue?raw').then(m => m.default),
+            },
+        ],
+        className: '',
+        component: () => import('@/registry/blocks/team/team5/Team5.vue').then(m => m.default),
+        raw: () => import('@/registry/blocks/team/team5/Team5.vue?raw').then(m => m.default),
+    },
+
     team4: {
         files: [
             {
@@ -111,20 +125,6 @@ export const blocks = {
         raw: () => import('@/registry/blocks/footer/footer1/Footer1.vue?raw').then(m => m.default),
     },
 
-    feature4: {
-        files: [
-            {
-                name: 'Feature4',
-                target: 'pages/index.vue',
-                path: '@/registry/blocks/feature/feature4/Feature4.vue',
-                raw: () => import('@/registry/blocks/feature/feature4/Feature4.vue?raw').then(m => m.default),
-            },
-        ],
-        className: '',
-        component: () => import('@/registry/blocks/feature/feature4/Feature4.vue').then(m => m.default),
-        raw: () => import('@/registry/blocks/feature/feature4/Feature4.vue?raw').then(m => m.default),
-    },
-
     feature3: {
         files: [
             {
@@ -137,6 +137,20 @@ export const blocks = {
         className: '',
         component: () => import('@/registry/blocks/feature/feature3/Feature3.vue').then(m => m.default),
         raw: () => import('@/registry/blocks/feature/feature3/Feature3.vue?raw').then(m => m.default),
+    },
+
+    feature4: {
+        files: [
+            {
+                name: 'Feature4',
+                target: 'pages/index.vue',
+                path: '@/registry/blocks/feature/feature4/Feature4.vue',
+                raw: () => import('@/registry/blocks/feature/feature4/Feature4.vue?raw').then(m => m.default),
+            },
+        ],
+        className: '',
+        component: () => import('@/registry/blocks/feature/feature4/Feature4.vue').then(m => m.default),
+        raw: () => import('@/registry/blocks/feature/feature4/Feature4.vue?raw').then(m => m.default),
     },
 
     feature2: {
@@ -195,6 +209,20 @@ export const blocks = {
         raw: () => import('@/registry/blocks/cta/cta3/Cta3.vue?raw').then(m => m.default),
     },
 
+    cta2: {
+        files: [
+            {
+                name: 'Cta2',
+                target: 'pages/index.vue',
+                path: '@/registry/blocks/cta/cta2/Cta2.vue',
+                raw: () => import('@/registry/blocks/cta/cta2/Cta2.vue?raw').then(m => m.default),
+            },
+        ],
+        className: '',
+        component: () => import('@/registry/blocks/cta/cta2/Cta2.vue').then(m => m.default),
+        raw: () => import('@/registry/blocks/cta/cta2/Cta2.vue?raw').then(m => m.default),
+    },
+
     cta1: {
         files: [
             {
@@ -207,20 +235,6 @@ export const blocks = {
         className: '',
         component: () => import('@/registry/blocks/cta/cta1/Cta1.vue').then(m => m.default),
         raw: () => import('@/registry/blocks/cta/cta1/Cta1.vue?raw').then(m => m.default),
-    },
-
-    card2: {
-        files: [
-            {
-                name: 'Card2',
-                target: 'pages/index.vue',
-                path: '@/registry/blocks/card/card2/Card2.vue',
-                raw: () => import('@/registry/blocks/card/card2/Card2.vue?raw').then(m => m.default),
-            },
-        ],
-        className: 'min-w-screen,min-h-screen,flex,justify-center,items-center',
-        component: () => import('@/registry/blocks/card/card2/Card2.vue').then(m => m.default),
-        raw: () => import('@/registry/blocks/card/card2/Card2.vue?raw').then(m => m.default),
     },
 
     card1: {
@@ -237,17 +251,17 @@ export const blocks = {
         raw: () => import('@/registry/blocks/card/card1/Card1.vue?raw').then(m => m.default),
     },
 
-    cta2: {
+    card2: {
         files: [
             {
-                name: 'Cta2',
+                name: 'Card2',
                 target: 'pages/index.vue',
-                path: '@/registry/blocks/cta/cta2/Cta2.vue',
-                raw: () => import('@/registry/blocks/cta/cta2/Cta2.vue?raw').then(m => m.default),
+                path: '@/registry/blocks/card/card2/Card2.vue',
+                raw: () => import('@/registry/blocks/card/card2/Card2.vue?raw').then(m => m.default),
             },
         ],
-        className: '',
-        component: () => import('@/registry/blocks/cta/cta2/Cta2.vue').then(m => m.default),
-        raw: () => import('@/registry/blocks/cta/cta2/Cta2.vue?raw').then(m => m.default),
+        className: 'min-w-screen,min-h-screen,flex,justify-center,items-center',
+        component: () => import('@/registry/blocks/card/card2/Card2.vue').then(m => m.default),
+        raw: () => import('@/registry/blocks/card/card2/Card2.vue?raw').then(m => m.default),
     },
 }
