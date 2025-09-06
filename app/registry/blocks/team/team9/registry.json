@@ -1,0 +1,24 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "team9",
+    "type": "registry:block",
+    "title": "team",
+    "dependencies": [
+        "@iconify/vue",
+        "reka-ui"
+    ],
+    "registryDependencies": [
+        "separator",
+        "tabs",
+        "input"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/team/team9/Team9.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/team/team9/Team9.vue",
+    "className": []
+}
+
