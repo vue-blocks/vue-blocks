@@ -57,9 +57,9 @@
                         variant="ghost"
                     >
                         <NuxtLink
+                            :title="config.public.title"
                             :to="config.public.github"
                             target="_blank"
-                            :title="config.public.title"
                         >
                             <Icon name="lucide:github" />
                         </NuxtLink>
@@ -85,12 +85,7 @@ defineOptions({
 })
 
 const config = useRuntimeConfig()
-const isBeyond = ref<boolean>(false)
 
-onMounted(() => {
-    const { y } = useWindowScroll()
-    watch(y, (n) => {
-        isBeyond.value = n > 50
-    })
-})
+const { y } = useWindowScroll()
+const isBeyond = computed(() => y.value > 50)
 </script>
