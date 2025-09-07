@@ -141,3 +141,6 @@ vite.config.ts.timestamp-*
 test
 /registry.json
 /app/types/virtual-blocks.d.ts
+
+# idea
+.idea/
