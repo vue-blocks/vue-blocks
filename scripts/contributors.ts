@@ -1,8 +1,10 @@
-import registryBlocks from '../registry.json'
 import md5 from 'md5'
 import { x } from 'tinyexec'
 import { resolve } from 'node:path'
 import type { IContributorInfo } from '../app/types/contributor'
+import { glob } from 'glob'
+import { clone, construct } from 'radash'
+import type { IRegistryItem } from '../app/types/registry'
 
 export async function execCommand(cmd: string, args: string[], cwd: string): Promise<string> {
     return (await x(cmd, args, {
@@ -48,7 +50,20 @@ export async function getContributorsAt(path: string) {
 }
 
 export const getBlocksContributors = async () => {
-    const registry = registryBlocks.items.map(block => ({
+    const registryBlocks: any[] = []
+
+    const registryFiles = await glob(resolve(process.cwd(), './app/registry/blocks/**/registry.json'))
+
+    await Promise.all(registryFiles.map(async (file) => {
+        const schema = await import(file).then(m => m.default)
+        const content = construct(clone(schema)) as IRegistryItem
+        delete content['component']
+        delete content['$schema']
+        delete content['className']
+        registryBlocks.push(content)
+    }))
+
+    const registry = registryBlocks.map(block => ({
         block: block.title.toLocaleLowerCase(),
         componentName: block.name.toLocaleLowerCase(),
     }))
