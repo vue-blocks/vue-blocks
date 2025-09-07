@@ -56,7 +56,7 @@ import { cn } from '~/lib/utils'
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 import menus from 'virtual-menus'
-import type { IMenu } from '~/types/menus'
+import type { IMenu } from '~/types/registry'
 
 defineOptions({
     name: 'BlockMenus',

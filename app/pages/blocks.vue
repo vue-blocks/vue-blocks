@@ -52,7 +52,7 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 import menus from 'virtual-menus'
-import type { IMenu } from '~/types/menus'
+import type { IMenu } from '~/types/registry'
 import BlockCard from '~/components/block/BlockCard.vue'
 
 useSeoMeta({

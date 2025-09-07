@@ -1,7 +1,7 @@
 import { resolve } from 'node:path'
 import type { Plugin } from 'vite'
 import { capitalize } from '../app/lib/utils'
-import type { IRegistryItem } from '../app/types/menus'
+import type { IRegistryItem } from '../app/types/registry'
 import { glob } from 'glob'
 import { clone, construct } from 'radash'
 import { writeFileSync } from 'node:fs'
