@@ -1,6 +1,6 @@
 <template>
     <div
-        v-for="menu in Menus as IMenu[]"
+        v-for="menu in menus as IMenu[]"
         :key="menu.channel"
     >
         <NuxtLink
@@ -53,7 +53,9 @@
 
 <script lang="ts" setup>
 import { cn } from '~/lib/utils'
-import Menus from '~/data/menus.json'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+import menus from 'virtual-menus'
 import type { IMenu } from '~/types/menus'
 
 defineOptions({

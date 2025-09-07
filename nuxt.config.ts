@@ -1,5 +1,6 @@
 import tailwindcss from '@tailwindcss/vite'
 import { virtualBlocks } from './plugins/virtual-blocks'
+import vitePluginMenus from './plugins/virtual-menus'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -46,6 +47,7 @@ export default defineNuxtConfig({
         plugins: [
             tailwindcss(),
             virtualBlocks(),
+            vitePluginMenus(),
         ],
     },
 
