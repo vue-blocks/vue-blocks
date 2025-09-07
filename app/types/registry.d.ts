@@ -4,12 +4,15 @@ export interface IMenu {
 }
 
 export interface IRegistryItem {
+    $schema?: string
     name: string
     type: string
     title: string
     dependencies?: string[]
     registryDependencies?: string[]
     files: IRegistryFile[]
+    component?: string
+    className?: string[]
 }
 
 export interface IRegistryFile {

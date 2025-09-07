@@ -1,7 +1,7 @@
 import { resolve } from 'node:path'
 import type { Plugin } from 'vite'
 import { capitalize } from '../app/lib/utils'
-import type { IRegistryItem } from '../app/types/registry'
+import type { IRegistryItem, IRegistrySchema } from '../app/types/registry'
 import { glob } from 'glob'
 import { clone, construct } from 'radash'
 import { writeFileSync } from 'node:fs'
@@ -11,7 +11,7 @@ const RESOLVED_VIRTUAL_MODULE_ID = '\0' + VIRTUAL_MODULE_ID
 const BLOCKS_ROOT = resolve(process.cwd(), 'app/registry/blocks')
 
 const generatorMenus = async (ctx?: any) => {
-    const registry = {
+    const registry: IRegistrySchema = {
         $schema: 'https://shadcn-vue.com/schema/registry.json',
         name: 'vue-blocks',
         homepage: 'https://vue-blocks.dev',
@@ -22,7 +22,7 @@ const generatorMenus = async (ctx?: any) => {
 
     await Promise.all(registryFiles.map(async (file) => {
         const schema = await import(file).then(m => m.default)
-        const content = construct(clone(schema))
+        const content = construct(clone(schema)) as IRegistryItem
         delete content['component']
         delete content['$schema']
         delete content['className']
