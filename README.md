@@ -70,14 +70,6 @@ npm run registry:template
 
 This command creates a new block module with the standard structure and boilerplate code.
 
-#### Step 3: Register Block Data
-
-```bash
-npm run build:shadcn:data
-```
-
-This command registers the new block with shadcn and generates the necessary site content data.
-
 ## 🤝 Contributing
 
 Welcome to submit issues and Pull requests to help improve the project
