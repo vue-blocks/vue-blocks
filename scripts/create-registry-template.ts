@@ -35,6 +35,6 @@ const componentContent = `<template>
     await mkdir(BLOCK_PATH, { recursive: true })
     await mkdir(BLOCK_COMPONENT_PATH, { recursive: true })
 
-    await writeFile(resolve(BLOCK_COMPONENT_PATH, 'registry.json'), `${registryContent}`, 'utf-8')
+    await writeFile(resolve(BLOCK_COMPONENT_PATH, 'registry-items.json'), `${registryContent}`, 'utf-8')
     await writeFile(resolve(BLOCK_COMPONENT_PATH, `${temporaryBlockName}.vue`), `${componentContent}`, 'utf-8')
 })()

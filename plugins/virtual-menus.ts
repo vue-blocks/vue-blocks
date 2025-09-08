@@ -18,7 +18,7 @@ const generatorMenus = async (ctx?: any) => {
         items: [],
     }
 
-    const registryFiles = await glob(resolve(process.cwd(), './app/registry/blocks/**/registry.json'))
+    const registryFiles = await glob(resolve(process.cwd(), './app/registry/blocks/**/registry-items.json'))
 
     await Promise.all(registryFiles.map(async (file) => {
         const schema = await import(file).then(m => m.default)

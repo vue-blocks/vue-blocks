@@ -47,7 +47,7 @@ export function virtualBlocks(): Plugin {
     let server: any
 
     async function generateCode(ctx?: any) {
-        const registryFiles = await glob(resolve(BLOCKS_ROOT, '**/registry.json'))
+        const registryFiles = await glob(resolve(BLOCKS_ROOT, '**/registry-items.json'))
 
         const blocks: Record<string, {
             files: { name: string, target: string, path: string }[]
