@@ -4,6 +4,7 @@
             v-for="member in contributors[module] as IContributorInfo[]"
             :key="member.name"
             :content="member.name"
+            side="top"
         >
             <img
                 :alt="member.name"
