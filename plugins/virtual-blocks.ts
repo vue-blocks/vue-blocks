@@ -65,7 +65,7 @@ export function virtualBlocks(): Plugin {
                 continue
             }
 
-            const folder = rf.replace(/registry\.json$/, '')
+            const folder = rf.replace(/registry-items\.json$/, '')
             const vueFiles = await glob(`${folder}**/*.vue`)
 
             if (ctx && typeof ctx.addWatchFile === 'function') {
