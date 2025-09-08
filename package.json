@@ -12,7 +12,7 @@
         "generate": "nuxt generate",
         "preview": "nuxt preview",
         "postinstall": "nuxt prepare",
-        "register:build": "shadcn-vue build --output ./public/r",
+        "registry:build": "shadcn-vue build --output ./public/r",
         "lint:fix": "eslint --fix",
         "registry:template": "tsx ./scripts/create-registry-template.ts"
     },
