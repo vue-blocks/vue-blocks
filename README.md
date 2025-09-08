@@ -70,6 +70,15 @@ npm run registry:template
 
 This command creates a new block module with the standard structure and boilerplate code.
 
+#### Step 3: Run the build script
+
+```shell
+npm run registry:build
+```
+
+> **Note**: Note: you do not need to run this script for every change. You only need to run it when you update the block
+> definition.
+
 ## 🤝 Contributing
 
 Welcome to submit issues and Pull requests to help improve the project
