@@ -8,7 +8,7 @@
             <div class="flex justify-start items-center gap-4">
                 <div>
                     <h1 class="text-xl font-semibold capitalize">
-                        {{ $route.params.block }}
+                        {{ route.params.block }}
                     </h1>
                 </div>
                 <div
@@ -161,6 +161,7 @@ interface IProps {
 }
 
 const props = defineProps<IProps>()
+const route = useRoute()
 
 const tabValue = ref('preview')
 const resizableRef = ref()

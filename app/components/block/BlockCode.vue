@@ -59,7 +59,7 @@ onBeforeMount(async () => {
     for (const file of (props.item.files ?? [])) {
         const raw = await file.raw()
         const highlighted = highlight(raw, 'vue')
-        cacheCodes.value.set(file.target || file.path.split(`${props.item.name}/`)[1], {
+        cacheCodes.value.set(file.target ?? file.path.split(`${props.item.name}/`)[1], {
             raw,
             html: highlighted,
         })
