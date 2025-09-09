@@ -5,18 +5,28 @@
         class="group/block-view-wrapper flex min-w-0 flex-col items-stretch gap-4"
     >
         <div class="flex items-center">
-            <TabsList>
-                <TabsTrigger
-                    value="preview"
-                >
-                    Preview
-                </TabsTrigger>
-                <TabsTrigger
-                    value="code"
-                >
-                    Code
-                </TabsTrigger>
-            </TabsList>
+            <div class="flex justify-start items-center gap-4">
+                <div>
+                    <h1 class="text-xl font-semibold capitalize">
+                        {{ $route.params.block }}
+                    </h1>
+                </div>
+                <div
+                    class="shrink-0 w-px bg-muted h-4 mx-1"
+                />
+                <TabsList>
+                    <TabsTrigger
+                        value="preview"
+                    >
+                        Preview
+                    </TabsTrigger>
+                    <TabsTrigger
+                        value="code"
+                    >
+                        Code
+                    </TabsTrigger>
+                </TabsList>
+            </div>
             <div class="ml-auto">
                 <div class="flex items-center shadow-none gap-3">
                     <ToggleGroup
