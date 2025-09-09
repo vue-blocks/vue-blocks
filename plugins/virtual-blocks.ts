@@ -1,7 +1,8 @@
 import type { Plugin } from 'vite'
 import { glob } from 'glob'
 import { resolve, sep } from 'node:path'
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { getRegistryFiles } from '../scripts/registry'
 
 const VIRTUAL_MODULE_ID = 'virtual-blocks'
 const RESOLVED_VIRTUAL_MODULE_ID = '\0' + VIRTUAL_MODULE_ID
@@ -47,7 +48,7 @@ export function virtualBlocks(): Plugin {
     let server: any
 
     async function generateCode(ctx?: any) {
-        const registryFiles = await glob(resolve(BLOCKS_ROOT, '**/registry-items.json'))
+        const registryFiles = await getRegistryFiles()
 
         const blocks: Record<string, {
             files: { name: string, target: string, path: string }[]
