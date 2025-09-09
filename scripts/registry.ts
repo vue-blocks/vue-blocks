@@ -3,10 +3,10 @@ import { resolve } from 'node:path'
 import { glob } from 'glob'
 import { clone, construct } from 'radash'
 
-export const getRegistryFiles = async (root = 'app/registry/blocks', url = '**/registry-items.json'): Promise<string[]> => {
-    const BLOCKS_ROOT = resolve(process.cwd(), root)
+export const getRegistryFiles = async (): Promise<string[]> => {
+    const BLOCKS_ROOT = resolve(process.cwd(), 'app/registry/blocks')
 
-    return await glob(url, {
+    return await glob('**/registry-items.json', {
         cwd: BLOCKS_ROOT,
         absolute: true,
         windowsPathsNoEscape: true,
