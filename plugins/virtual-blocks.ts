@@ -1,5 +1,4 @@
 import type { Plugin } from 'vite'
-import { glob } from 'glob'
 import { resolve, sep } from 'node:path'
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { getRegistryFiles } from '../scripts/registry'
@@ -19,6 +18,7 @@ async function generateTypes(blockNames: string[]) {
 
     const namesUnion = blockNames.map(n => `'${n}'`).join(' | ') || 'string'
 
+    // language=ts
     const code = `
 // Auto-generated type declaration for virtual-blocks
 export type BlockFile = {
@@ -67,7 +67,7 @@ export function virtualBlocks(): Plugin {
             }
 
             const folder = rf.replace(/registry-items\.json$/, '')
-            const vueFiles = await glob(`${folder}**/*.vue`)
+            const vueFiles = await getRegistryFiles(folder, '**/*.vue')
 
             if (ctx && typeof ctx.addWatchFile === 'function') {
                 ctx.addWatchFile(rf)
