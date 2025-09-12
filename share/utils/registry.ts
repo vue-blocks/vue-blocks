@@ -6,11 +6,18 @@ import { clone, construct } from 'radash'
 export const getRegistryFiles = async (root = 'app/registry/blocks', url = '**/registry-items.json'): Promise<string[]> => {
     const BLOCKS_ROOT = resolve(process.cwd(), root)
 
-    return await glob(url, {
+    const files = await glob('**/registry-items.json', {
         cwd: BLOCKS_ROOT,
         absolute: true,
         windowsPathsNoEscape: true,
     })
+
+    return files.sort((a, b) =>
+        a.localeCompare(b, undefined, {
+            numeric: true,
+            sensitivity: 'base',
+        }),
+    )
 }
 
 export const getAllRegistry = async (): Promise<IRegistrySchema> => {
