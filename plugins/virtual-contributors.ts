@@ -1,5 +1,5 @@
 import type { Plugin } from 'vite'
-import { getBlocksContributors } from '../scripts/contributors'
+import { getBlocksContributors } from '../share/utils/contributors'
 
 const ID = 'virtual-contributors'
 

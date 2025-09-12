@@ -1,7 +1,7 @@
 import type { Plugin } from 'vite'
 import { resolve, sep } from 'node:path'
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
-import { getRegistryFiles } from '../scripts/registry'
+import { getRegistryFiles } from '../share/utils/registry'
 
 const VIRTUAL_MODULE_ID = 'virtual-blocks'
 const RESOLVED_VIRTUAL_MODULE_ID = '\0' + VIRTUAL_MODULE_ID

@@ -1,10 +1,10 @@
 import md5 from 'md5'
 import { x } from 'tinyexec'
 import { resolve } from 'node:path'
-import type { IContributorInfo } from '../app/types/contributor'
+import type { IContributorInfo } from '../../app/types/contributor'
 import { glob } from 'glob'
 import { clone, construct } from 'radash'
-import type { IRegistryItem } from '../app/types/registry'
+import type { IRegistryItem } from '../../app/types/registry'
 import { getAllRegistry } from './registry'
 
 export async function execCommand(cmd: string, args: string[], cwd: string): Promise<string> {

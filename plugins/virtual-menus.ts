@@ -3,7 +3,7 @@ import type { Plugin } from 'vite'
 import { capitalize } from '../app/lib/utils'
 import type { IRegistryItem } from '../app/types/registry'
 import { writeFileSync } from 'node:fs'
-import { getAllRegistry } from '../scripts/registry'
+import { getAllRegistry } from '../share/utils/registry'
 
 const VIRTUAL_MODULE_ID = 'virtual-menus'
 const RESOLVED_VIRTUAL_MODULE_ID = '\0' + VIRTUAL_MODULE_ID

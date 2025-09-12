@@ -1,4 +1,4 @@
-import type { IRegistryItem, IRegistrySchema } from '../app/types/registry'
+import type { IRegistryItem, IRegistrySchema } from '../../app/types/registry'
 import { resolve } from 'node:path'
 import { glob } from 'glob'
 import { clone, construct } from 'radash'
