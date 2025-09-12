@@ -16,7 +16,7 @@ defineOptions({
     name: 'BlockPreview',
 })
 
-const props = withDefaults(defineProps<{
+withDefaults(defineProps<{
     url: string
 }>(), {})
 </script>
