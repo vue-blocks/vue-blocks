@@ -1,0 +1,25 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "team11",
+    "type": "registry:block",
+    "title": "team",
+    "dependencies": [
+        "lucide-vue-next"
+    ],
+    "registryDependencies": [
+        "badge",
+        "button",
+        "card",
+        "avatar",
+        "tabs"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/team/team11/Team11.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/team/team11/Team11.vue",
+    "className": []
+}
+
