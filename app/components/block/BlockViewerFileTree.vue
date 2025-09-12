@@ -60,16 +60,17 @@
 <script lang="ts" setup>
 // source from : https://github.com/unovue/shadcn-vue/blob/dev/apps/www/.vitepress/theme/components/BlockViewerFileTree.vue
 
-import type { IBlock, IFileTree } from '~/types/blocks'
+import type { IFileTree } from '~/types/blocks'
 import { Button } from '~/components/ui/button'
 import { TreeItem, TreeRoot } from 'reka-ui'
+import type { IRegistryItem } from '~/types/registry'
 
 defineOptions({
     name: 'BlockViewerFileTree',
 })
 
 const props = defineProps<{
-    item: IBlock
+    item: IRegistryItem
 }>()
 
 const activeFile = defineModel<IFileTree>()

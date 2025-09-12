@@ -145,12 +145,13 @@ import { cn } from '~/lib/utils'
 import BlockPreview from '~/components/block/BlockPreview.vue'
 import BlockContributors from '~/components/block/BlockContributors.vue'
 import BlockCode from '~/components/block/BlockCode.vue'
-import type { BlockKey, IBlock } from '~/types/blocks'
+import type { BlockKey } from '~/types/blocks'
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error virtual
 import blocks from 'virtual-blocks'
 import BlockNpmCli from '~/components/block/BlockNpmCli.vue'
 import BlockCallbackIssues from '~/components/block/BlockCallbackIssues.vue'
+import type { IRegistryItem } from '~/types/registry'
 
 defineOptions({
     name: 'BlockContainer',
@@ -166,13 +167,13 @@ const route = useRoute()
 const tabValue = ref('preview')
 const resizableRef = ref()
 
-const componentRegistry = ref<IBlock>()
+const componentRegistry = ref<IRegistryItem>()
 
 const iframeURL = computed(() => {
     const url = new URL(`${window.location.origin}/preview/${props.module}`)
 
     if (componentRegistry.value?.className) {
-        url.searchParams.append('className', componentRegistry.value.className)
+        url.searchParams.append('className', componentRegistry.value.className.join(','))
     }
     return url.href
 })
