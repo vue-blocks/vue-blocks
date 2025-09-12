@@ -33,7 +33,7 @@ const generatorMenus = async (ctx?: any) => {
     return `export default ${JSON.stringify(content, null, 2)}`
 }
 
-const vitePluginMenus = (): Plugin => {
+export const virtualMenus = (): Plugin => {
     let serverInstance: any
 
     return {
@@ -72,5 +72,3 @@ const vitePluginMenus = (): Plugin => {
         },
     }
 }
-
-export default vitePluginMenus
