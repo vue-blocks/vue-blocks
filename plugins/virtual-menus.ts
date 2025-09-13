@@ -2,7 +2,6 @@ import { resolve } from 'node:path'
 import type { Plugin } from 'vite'
 import { capitalize } from '../app/lib/utils'
 import type { IRegistryItem } from '../app/types/registry'
-import { writeFileSync } from 'node:fs'
 import { getAllRegistry } from '../share/utils/registry'
 
 const VIRTUAL_MODULE_ID = 'virtual-menus'
@@ -11,8 +10,6 @@ const BLOCKS_ROOT = resolve(process.cwd(), 'app/registry/blocks')
 
 const generatorMenus = async (ctx?: any) => {
     const registry = await getAllRegistry()
-
-    writeFileSync(resolve(process.cwd(), 'registry.json'), JSON.stringify(registry, null, 4))
 
     const map = new Map()
 
@@ -55,13 +52,9 @@ export const virtualMenus = (): Plugin => {
             serverInstance = _server
             serverInstance.watcher.add(BLOCKS_ROOT)
 
-            serverInstance.watcher.on('add', onFileChange)
-            serverInstance.watcher.on('change', onFileChange)
-            serverInstance.watcher.on('unlink', onFileChange)
-            serverInstance.watcher.on('addDir', onFileChange)
-            serverInstance.watcher.on('unlinkDir', onFileChange)
+            serverInstance.watcher.on('all', onFileChange)
 
-            function onFileChange(file: string) {
+            function onFileChange(eventName: string, file: string) {
                 if (!file.includes(BLOCKS_ROOT)) return
                 const mod = serverInstance.moduleGraph.getModuleById(RESOLVED_VIRTUAL_MODULE_ID)
                 if (mod) {
