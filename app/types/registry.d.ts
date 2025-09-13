@@ -18,6 +18,9 @@ export interface IRegistryItem {
 export interface IRegistryFile {
     path: string
     type: string
+    target: string
+    name?: string
+    raw?: () => Promise<any>
 }
 
 export interface IRegistrySchema {

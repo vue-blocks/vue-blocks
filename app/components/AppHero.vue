@@ -1,5 +1,5 @@
 <template>
-    <section class="relative w-screen overflow-hidden py-32">
+    <section class="relative overflow-hidden py-32">
         <div class="container relative flex flex-col lg:flex-row">
             <div class="mt-10 space-y-12 lg:w-1/2">
                 <!--                <p class="bg-muted w-fit rounded-full px-4 py-1 text-sm"> -->
