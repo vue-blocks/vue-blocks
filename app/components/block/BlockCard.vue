@@ -38,5 +38,5 @@ interface IProps {
     url: string
 }
 
-const props = withDefaults(defineProps<IProps>(), {})
+withDefaults(defineProps<IProps>(), {})
 </script>

@@ -18,8 +18,7 @@ defineOptions({
     name: 'AppTooltip',
 })
 
-declare const SIDE_OPTIONS: readonly ['top', 'right', 'bottom', 'left']
-type Side = (typeof SIDE_OPTIONS)[number]
+type Side = 'top' | 'right' | 'bottom' | 'left'
 
 withDefaults(defineProps<{ content: string, side: Side }>(), {})
 </script>

@@ -8,7 +8,7 @@ const VIRTUAL_MODULE_ID = 'virtual-menus'
 const RESOLVED_VIRTUAL_MODULE_ID = '\0' + VIRTUAL_MODULE_ID
 const BLOCKS_ROOT = resolve(process.cwd(), 'app/registry/blocks')
 
-const generatorMenus = async (ctx?: any) => {
+const generatorMenus = async (_?: any) => {
     const registry = await getAllRegistry()
 
     const map = new Map()

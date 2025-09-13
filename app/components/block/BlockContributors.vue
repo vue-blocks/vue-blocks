@@ -29,5 +29,5 @@ interface IProps {
     module: string
 }
 
-const props = withDefaults(defineProps<IProps>(), {})
+withDefaults(defineProps<IProps>(), {})
 </script>

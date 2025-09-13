@@ -34,7 +34,6 @@
 
 <script lang="ts" setup>
 import { Button } from '@/components/ui/button'
-import { Icon } from '@iconify/vue'
 
 const heading = 'Call to Action'
 const description = 'Build faster with our collection of pre-built blocks. Speed up your development and ship features in record time.'
