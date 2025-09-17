@@ -12,6 +12,7 @@ export const highlighter = computedAsync<HighlighterCore>(async (onCancel) => {
         langs: [
             () => import('shiki/langs/javascript.mjs'),
             () => import('shiki/langs/vue.mjs'),
+            () => import('shiki/langs/json.mjs'),
         ],
     })
 

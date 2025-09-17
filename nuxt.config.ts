@@ -5,13 +5,7 @@ import { virtualContributors } from './plugins/virtual-contributors'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    modules: [
-        '@nuxt/eslint',
-        '@nuxt/icon',
-        'shadcn-nuxt',
-        '@vueuse/nuxt',
-        'nuxt-shiki',
-    ],
+    modules: ['@nuxt/eslint', '@nuxt/icon', 'shadcn-nuxt', '@vueuse/nuxt', '@nuxt/content'],
 
     ssr: false,
     devtools: { enabled: true },

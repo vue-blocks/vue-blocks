@@ -32,6 +32,10 @@ defineOptions({
 
 const menus: { title: string, href: string }[] = [
     {
+        title: 'Documentation',
+        href: '/docs',
+    },
+    {
         title: 'Blocks',
         href: '/blocks',
     },
