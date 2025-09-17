@@ -12,10 +12,12 @@
                     <Icon
                         v-if="copied"
                         name="lucide:check"
+                        mode="svg"
                     />
                     <Icon
                         v-else
                         name="lucide:clipboard"
+                        mode="svg"
                     />
                 </Button>
             </TooltipTrigger>
@@ -31,7 +33,7 @@ import { Button } from '~/components/ui/button'
 import { useClipboard } from '@vueuse/core'
 
 defineOptions({
-    name: 'BlockCopyCodeButton',
+    name: 'CopyCodeButton',
 })
 
 const props = withDefaults(defineProps<{

@@ -27,6 +27,7 @@
         "url": "git@github.com:vue-blocks/vue-blocks.git"
     },
     "dependencies": {
+        "@nuxt/content": "3.7.0",
         "@tailwindcss/vite": "^4.1.11",
         "@vueuse/core": "^13.9.0",
         "@vueuse/nuxt": "^13.5.0",
@@ -66,7 +67,8 @@
         "tinyexec": "^1.0.1",
         "tsx": "^4.20.5",
         "typescript": "^5.8.3",
-        "vite": "^7.1.5"
+        "vite": "^7.1.5",
+        "zod-to-json-schema": "^3.24.6"
     },
     "simple-git-hooks": {
         "pre-commit": "npx lint-staged",

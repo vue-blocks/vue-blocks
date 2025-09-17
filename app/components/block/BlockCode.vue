@@ -13,7 +13,7 @@
                 <Icon name="lucide:file" />
                 {{ activeFile?.path }}
                 <div class="ml-auto flex items-center gap-2">
-                    <BlockCopyCodeButton :code="activeFileMeta?.raw" />
+                    <CopyCodeButton :code="activeFileMeta?.raw" />
                 </div>
             </div>
 
