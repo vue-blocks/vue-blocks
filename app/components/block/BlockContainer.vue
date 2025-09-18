@@ -1,5 +1,5 @@
 <template>
-    <BlockContributors :module="module" />
+    <!--    <BlockContributors :module="module" /> -->
     <Tabs
         v-model="tabValue"
         class="group/block-view-wrapper flex min-w-0 flex-col items-stretch gap-4"
@@ -143,7 +143,6 @@ import { Button } from '~/components/ui/button'
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '~/components/ui/resizable'
 import { cn } from '~/lib/utils'
 import BlockPreview from '~/components/block/BlockPreview.vue'
-import BlockContributors from '~/components/block/BlockContributors.vue'
 import BlockCode from '~/components/block/BlockCode.vue'
 import type { BlockKey } from '~/types/blocks'
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
