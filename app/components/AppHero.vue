@@ -66,9 +66,9 @@
                     <Orbit
                         v-for="(src, index) in circle1Images"
                         :key="index"
-                        :delay="20+index"
+                        :delay="12+index"
                         :direction="ORBIT_DIRECTION.CounterClockwise"
-                        :duration="6"
+                        :duration="circle1Images.length"
                         :path="index===0"
                         :radius="310"
                         class="size-12"
@@ -82,8 +82,8 @@
                     <Orbit
                         v-for="(src, index) in circle2Images"
                         :key="index"
-                        :delay="20+index"
-                        :duration="6"
+                        :delay="12+index"
+                        :duration="circle2Images.length"
                         :path="index===0"
                         :radius="390"
                         class="size-12"
@@ -97,9 +97,9 @@
                     <Orbit
                         v-for="(src, index) in circle3Images"
                         :key="index"
-                        :delay="20+index"
+                        :delay="12+index"
                         :direction="ORBIT_DIRECTION.CounterClockwise"
-                        :duration="6"
+                        :duration="circle3Images.length"
                         :path="index===0"
                         :radius="470"
                         class="size-12"
@@ -113,8 +113,8 @@
                     <Orbit
                         v-for="(src, index) in circle4Images"
                         :key="index"
-                        :delay="20+index"
-                        :duration="6"
+                        :delay="12+index"
+                        :duration="circle4Images.length"
                         :path="index===0"
                         :radius="550"
                         class="size-12"
@@ -165,6 +165,11 @@ const circle1Images = [
     'https://cdn.svglogos.dev/logos/vitejs.svg',
     'https://svgl.app/library/typescript.svg',
     'https://cdn.svglogos.dev/logos/esbuild.svg',
+    'https://cdn.svglogos.dev/logos/bun.svg',
+    'https://cdn.svglogos.dev/logos/eslint.svg',
+    'https://cdn.svglogos.dev/logos/headlessui-icon.svg',
+    'https://cdn.svglogos.dev/logos/element.svg',
+    'https://cdn.svglogos.dev/logos/figma.svg',
 ]
 
 const circle2Images = [
@@ -173,14 +178,24 @@ const circle2Images = [
     'https://cdn.svglogos.dev/logos/vitest.svg',
     'https://cdn.svglogos.dev/logos/vueuse.svg',
     'https://cdn.svglogos.dev/logos/nuxt-icon.svg',
+    'https://cdn.svglogos.dev/logos/laravel.svg',
+    'https://cdn.svglogos.dev/logos/biomejs-icon.svg',
+    'https://cdn.svglogos.dev/logos/importio-icon.svg',
+    'https://cdn.svglogos.dev/logos/astro-icon.svg',
+    'https://cdn.svglogos.dev/logos/faker.svg',
 ]
 
 const circle3Images = [
+    'https://cdn.svglogos.dev/logos/chartjs.svg',
     'https://cdn.svglogos.dev/logos/pinia.svg',
     'https://cdn.svglogos.dev/logos/github-icon.svg',
     'https://cdn.svglogos.dev/logos/solidjs-icon.svg',
     'https://cdn.svglogos.dev/logos/tailwindcss-icon.svg',
     'https://cdn.svglogos.dev/logos/unjs.svg',
+    'https://cdn.svglogos.dev/logos/json-schema-icon.svg',
+    'https://cdn.svglogos.dev/logos/volar.svg',
+    'https://cdn.svglogos.dev/logos/codium-icon.svg',
+    'https://cdn.svglogos.dev/logos/hono.svg',
 ]
 
 const circle4Images = [
@@ -190,5 +205,10 @@ const circle4Images = [
     'https://cdn.svglogos.dev/logos/nvm.svg',
     'https://cdn.svglogos.dev/logos/webstorm.svg',
     'https://cdn.svglogos.dev/logos/vercel-icon.svg',
+    'https://cdn.svglogos.dev/logos/zod.svg',
+    'https://cdn.svglogos.dev/logos/nodejs-icon-alt.svg',
+    'https://cdn.svglogos.dev/logos/turbopack-icon.svg',
+    'https://cdn.svglogos.dev/logos/codepen-icon.svg',
+    'https://cdn.svglogos.dev/logos/codesandbox-icon.svg',
 ]
 </script>
