@@ -1,0 +1,21 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "integration1",
+    "type": "registry:block",
+    "title": "integration",
+    "dependencies": [
+        "lucide-vue-next"
+    ],
+    "registryDependencies": [
+        "button"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/integration/integration1/Integration1.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/integration/integration1/Integration1.vue",
+    "className": []
+}
+
