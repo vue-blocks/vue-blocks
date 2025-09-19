@@ -2,7 +2,6 @@ import type { IRegistryFile, IRegistryItem, IRegistrySchema } from '../../app/ty
 import { resolve, sep } from 'node:path'
 import { glob } from 'glob'
 import { clone, construct } from 'radash'
-import { writeFileSync } from 'node:fs'
 import { mkdir, writeFile } from 'node:fs/promises'
 
 function normalizePath(p: string) {
@@ -123,7 +122,13 @@ export const getAllVueBlocks = async () => {
 
     await generatorBlockTypes(blockNames)
 
-    writeFileSync(normalizePath(resolve(process.cwd(), 'registry.json')), JSON.stringify(await getAllRegistry(), null, 4))
+    await writeFile(
+        normalizePath(resolve(process.cwd(), 'registry.json')),
+        JSON.stringify(await getAllRegistry(), null, 4),
+        {
+            flag: 'w',
+        },
+    )
 
     return `{${registryEntries}}`
 }
