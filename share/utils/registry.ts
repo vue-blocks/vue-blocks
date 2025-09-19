@@ -2,7 +2,7 @@ import type { IRegistryFile, IRegistryItem, IRegistrySchema } from '../../app/ty
 import { resolve, sep } from 'node:path'
 import { glob } from 'glob'
 import { clone, construct } from 'radash'
-import { mkdir, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, writeFile } from 'node:fs/promises'
 
 function normalizePath(p: string) {
     return p.split(sep).join('/')
@@ -67,7 +67,7 @@ export const getAllRegistry = async (): Promise<IRegistrySchema> => {
     const registryFiles = await getRegistryFiles()
 
     await Promise.all(registryFiles.map(async (file) => {
-        const schema = await import(file).then(m => m.default)
+        const schema = JSON.parse(await readFile(file, 'utf-8'))
         const content = construct(clone(schema)) as IRegistryItem
         delete content['component']
         delete content['$schema']
@@ -85,7 +85,7 @@ export const getAllVueBlocks = async () => {
 
     const registryEntries = await Promise.all(
         files.map(async (file) => {
-            const block = (await import(file)).default as IRegistryItem
+            const block = JSON.parse(await readFile(file, 'utf-8')) as IRegistryItem
 
             blockNames.push(block.name)
 
@@ -122,13 +122,17 @@ export const getAllVueBlocks = async () => {
 
     await generatorBlockTypes(blockNames)
 
+    return `{${registryEntries}}`
+}
+
+export const updateRegistryContent = async () => {
+    const registries = await getAllRegistry()
+
     await writeFile(
         normalizePath(resolve(process.cwd(), 'registry.json')),
-        JSON.stringify(await getAllRegistry(), null, 4),
+        JSON.stringify(registries, null, 4),
         {
             flag: 'w',
         },
     )
-
-    return `{${registryEntries}}`
 }
