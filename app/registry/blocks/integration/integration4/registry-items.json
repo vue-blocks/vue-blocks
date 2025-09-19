@@ -1,0 +1,22 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "integration4",
+    "type": "registry:block",
+    "title": "integration",
+    "dependencies": [
+    ],
+    "registryDependencies": [
+        "button",
+        "switch",
+        "tabs"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/integration/integration4/Integration4.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/integration/integration4/Integration4.vue",
+    "className": []
+}
+
