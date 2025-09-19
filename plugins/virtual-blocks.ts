@@ -1,6 +1,8 @@
 import type { Plugin } from 'vite'
 import { resolve } from 'node:path'
-import { getAllVueBlocks } from '../share/utils/registry'
+import { getAllVueBlocks, updateRegistryContent } from '../share/utils/registry'
+import { blue, green } from 'picocolors'
+import { debounce } from 'radash'
 
 const ID = 'virtual-blocks'
 const VIRTUAL_ID = '\0' + ID
@@ -24,18 +26,22 @@ export const virtualBlocks = (): Plugin => {
         configureServer(server) {
             serverInstance = server
 
-            serverInstance.watcher.add(BLOCKS_ROOT)
-
-            serverInstance.watcher.on('all', onFileChange)
-
-            function onFileChange(eventName: string, file: string) {
+            const onFileChange = debounce({ delay: 100 }, async (eventName: string, file: string) => {
                 if (!file.includes(BLOCKS_ROOT)) return
+
+                console.log(`${blue('ℹ')} ${green('shadcn registry update')}`, file)
+
+                await updateRegistryContent()
+
                 const mod = serverInstance.moduleGraph.getModuleById(VIRTUAL_ID)
                 if (mod) {
                     serverInstance.moduleGraph.invalidateModule(mod)
                     serverInstance.ws.send({ type: 'full-reload' })
                 }
-            }
+            })
+
+            serverInstance.watcher.add(BLOCKS_ROOT)
+            serverInstance.watcher.on('all', onFileChange)
         },
     }
 }
