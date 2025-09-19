@@ -68,7 +68,7 @@ const DATA: DataItem[] = [
     },
     {
         id: 4,
-        icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/gatsby-icon.svg',
+        icon: 'https://cdn.svglogos.dev/logos/gatsby.svg',
         title: 'Gatsby',
         description: 'Build blazing-fast websites with Gatsby integration.',
     },
