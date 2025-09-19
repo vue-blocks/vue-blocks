@@ -1,0 +1,18 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "logo4",
+  "type": "registry:block",
+  "title": "logo",
+  "dependencies": [],
+  "registryDependencies": [
+    "badge",
+    "button"
+  ],
+  "files": [
+    {
+      "path": "app/registry/blocks/logo/logo4/Logo4.vue",
+      "content": "<template>\n    <section class=\"py-32\">\n        <div class=\"container\">\n            <div class=\"text-center\">\n                <Badge variant=\"outline\">\n                    Referral Partners\n                </Badge>\n                <h1 class=\"mx-auto mt-8 mb-5 max-w-3xl text-4xl font-bold text-balance md:text-6xl\">\n                    Join our partner network. Grow together with us.\n                </h1>\n                <p class=\"mx-auto max-w-3xl text-xl font-medium text-balance\">\n                    Partner with leading companies in the industry, unlock new\n                    opportunities, and accelerate your business growth.\n                </p>\n                <Button\n                    size=\"lg\"\n                    class=\"mt-8\"\n                >\n                    Become a partner\n                </Button>\n            </div>\n        </div>\n        <div class=\"mx-auto mt-24 grid max-w-5xl grid-cols-2 place-items-center gap-x-4 gap-y-6 md:grid-cols-3 lg:grid-cols-4 lg:gap-6\">\n            <img\n                v-for=\"logo in logos\"\n                :key=\"logo.name\"\n                class=\"grayscale\"\n                :src=\"logo.logo\"\n                :alt=\"logo.name\"\n                :width=\"144\"\n                :height=\"80\"\n            >\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nimport { Badge } from '@/components/ui/badge'\nimport { Button } from '@/components/ui/button'\n\nconst logos = [\n    {\n        name: 'Astro',\n        logo: 'https://cdn.svglogos.dev/logos/astro.svg',\n    },\n    {\n        name: 'Vercel',\n        logo: 'https://cdn.svglogos.dev/logos/vercel.svg',\n    },\n    {\n        name: 'Supabase',\n        logo: 'https://cdn.svglogos.dev/logos/supabase.svg',\n    },\n    {\n        name: 'Importio',\n        logo: 'https://cdn.svglogos.dev/logos/importio.svg',\n    },\n    {\n        name: 'Miro',\n        logo: 'https://cdn.svglogos.dev/logos/miro.svg',\n\n    },\n    {\n        name: 'Htmx',\n        logo: 'https://cdn.svglogos.dev/logos/htmx.svg',\n    },\n    {\n        name: 'Biomejs',\n        logo: 'https://cdn.svglogos.dev/logos/biomejs.svg',\n    },\n    {\n        name: 'tailwindcss',\n        logo: 'https://cdn.svglogos.dev/logos/tailwindcss.svg',\n    },\n]\n</script>\n",
+      "type": "registry:block"
+    }
+  ]
+}

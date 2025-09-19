@@ -1,0 +1,21 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "logo4",
+    "type": "registry:block",
+    "title": "logo",
+    "dependencies": [
+    ],
+    "registryDependencies": [
+        "badge",
+        "button"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/logo/logo4/Logo4.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/logo/logo4/Logo4.vue",
+    "className": []
+}
+
