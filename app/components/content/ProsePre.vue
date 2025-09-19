@@ -12,6 +12,14 @@
                 '[&_pre]:rounded-xl',
                 '[&_pre]:p-3',
                 '[&_pre]:text-sm',
+                '[&_pre]:overflow-x-auto',
+                '[&_pre]:whitespace-pre-wrap',
+                '[&_pre]:break-words',
+                '[&_pre_code]:whitespace-pre-wrap',
+                '[&_pre_code]:break-words',
+                '[&_pre_code]:overflow-wrap-break-word',
+                '[&_pre_code_.token.string]:break-all',
+                '[&_pre_code_.token.string]:overflow-wrap-anywhere',
                 filename? '[&_pre]:rounded-t-none' : '',
             )"
             v-html="highlight(code, language)"

@@ -21,7 +21,7 @@
                 >
                 <span
                     :class="cn(
-                        'font-bold text-2xl',
+                        'font-bold text-2xl hidden md:block',
                         // 'bg-gradient-to-r',
                         // 'from-green-700 dark:from-indigo-400',
                         // 'to-[#35495e] dark:to-indigo-300',
