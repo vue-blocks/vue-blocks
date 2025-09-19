@@ -1,0 +1,19 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "logo3",
+  "type": "registry:block",
+  "title": "logo",
+  "dependencies": [
+    "lucide-vue-next"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "app/registry/blocks/logo/logo3/Logo3.vue",
+      "content": "<template>\n    <section class=\"py-32\">\n        <div class=\"container\">\n            <div class=\"grid overflow-hidden rounded-xl border border-border md:grid-cols-2\">\n                <div class=\"my-auto px-6 py-10 sm:px-10 sm:py-12 lg:p-16\">\n                    <div class=\"w-full md:max-w-md\">\n                        <h2 class=\"mb-4 text-2xl font-semibold lg:text-3xl\">\n                            Our certifications say it all.\n                        </h2>\n                        <p class=\"mb-6 text-lg\">\n                            In non libero bibendum odio pellentesque ullamcorper. Aenean\n                            condimentum, dolor commodo pulvinar bibendum.\n                        </p>\n                        <Button class=\"w-full md:w-fit\">\n                            <ArrowRight class=\"mr-2 size-5\" />\n                            Get in touch\n                        </Button>\n                    </div>\n                </div>\n                <div class=\"grid grid-cols-3 border-t border-border md:border-t-0 md:border-l\">\n                    <div\n                        v-for=\"logo in logos\"\n                        :key=\"logo.id\"\n                        class=\"-mb-px flex items-center justify-center border-r border-b border-border p-5 nth-[3n]:border-r-0 sm:p-6\"\n                    >\n                        <img\n                            :src=\"logo.image\"\n                            :alt=\"logo.description\"\n                            class=\"size-12 object-cover object-center sm:size-16 lg:size-24\"\n                        >\n                    </div>\n                </div>\n            </div>\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nimport { ArrowRight } from 'lucide-vue-next'\n\nimport { Button } from '@/components/ui/button'\n\nconst logos = [\n    {\n        id: 'logo-1',\n        description: 'Logo 1',\n        image: 'https://cdn.svglogos.dev/logos/astro-icon.svg',\n    },\n    {\n        id: 'logo-2',\n        description: 'Logo 2',\n        image: 'https://cdn.svglogos.dev/logos/gitlab-icon.svg',\n    },\n    {\n        id: 'logo-3',\n        description: 'Logo 3',\n        image: 'https://cdn.svglogos.dev/logos/daisyUI-icon.svg',\n    },\n    {\n        id: 'logo-4',\n        description: 'Logo 4',\n        image: 'https://cdn.svglogos.dev/logos/bluesky.svg',\n    },\n    {\n        id: 'logo-5',\n        description: 'Logo 5',\n        image: 'https://cdn.svglogos.dev/logos/miro-icon.svg',\n    },\n    {\n        id: 'logo-6',\n        description: 'Logo 6',\n        image: 'https://cdn.svglogos.dev/logos/x.svg',\n    },\n]\n</script>\n",
+      "type": "registry:block"
+    }
+  ]
+}
