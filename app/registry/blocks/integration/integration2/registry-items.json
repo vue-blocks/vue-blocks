@@ -1,0 +1,24 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "integration2",
+    "type": "registry:block",
+    "title": "integration",
+    "dependencies": [],
+    "registryDependencies": [
+        "button",
+        "card"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/integration/integration2/FeatureCard.vue",
+            "type": "registry:block"
+        },
+        {
+            "path": "app/registry/blocks/integration/integration2/Integration2.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/integration/integration2/Integration2.vue",
+    "className": []
+}
+
