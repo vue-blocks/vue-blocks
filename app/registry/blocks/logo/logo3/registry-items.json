@@ -1,0 +1,21 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "logo3",
+    "type": "registry:block",
+    "title": "logo",
+    "dependencies": [
+        "lucide-vue-next"
+    ],
+    "registryDependencies": [
+        "button"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/logo/logo3/Logo3.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/logo/logo3/Logo3.vue",
+    "className": []
+}
+
