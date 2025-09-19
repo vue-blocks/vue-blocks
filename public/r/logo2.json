@@ -1,0 +1,15 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "logo2",
+  "type": "registry:block",
+  "title": "logo",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "app/registry/blocks/logo/logo2/Logo2.vue",
+      "content": "<template>\n    <section class=\"container flex flex-wrap items-center justify-between gap-12 py-32\">\n        <p class=\"text-lg leading-[140%] tracking-[-0.32px] text-primary\">\n            Used by the world&apos;s leading companies\n        </p>\n        <div class=\"flex flex-wrap items-center gap-x-8 gap-y-6 opacity-70 grayscale lg:gap-[60px]\">\n            <img\n                v-for=\"(partner, index) in partners\"\n                :key=\"index\"\n                :src=\"partner.logo\"\n                :alt=\"`${partner.name} logo`\"\n                :width=\"109\"\n                :height=\"48\"\n                class=\"object-contain\"\n            >\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nconst partners = [\n    {\n        name: 'Astro',\n        logo: 'https://cdn.svglogos.dev/logos/astro.svg',\n    },\n    {\n        name: 'Vercel',\n        logo: 'https://cdn.svglogos.dev/logos/vercel.svg',\n    },\n    {\n        name: 'Astro',\n        logo: 'https://cdn.svglogos.dev/logos/astro.svg',\n    },\n    {\n        name: 'Supabase',\n        logo: 'https://cdn.svglogos.dev/logos/supabase.svg',\n    },\n    {\n        name: 'Import',\n        logo: 'https://cdn.svglogos.dev/logos/importio.svg',\n    },\n]\n</script>\n",
+      "type": "registry:block"
+    }
+  ]
+}
