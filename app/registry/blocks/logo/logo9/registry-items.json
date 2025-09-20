@@ -1,0 +1,21 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "logo9",
+    "type": "registry:block",
+    "title": "logo",
+    "dependencies": [
+        "embla-carousel-auto-scroll"
+    ],
+    "registryDependencies": [
+        "carousel"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/logo/logo9/Logo9.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/logo/logo9/Logo9.vue",
+    "className": []
+}
+
