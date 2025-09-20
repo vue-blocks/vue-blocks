@@ -1,0 +1,28 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "logo10",
+    "type": "registry:block",
+    "title": "logo",
+    "dependencies": [
+        "embla-carousel-auto-scroll"
+    ],
+    "registryDependencies": [
+        "button",
+        "carousel"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/logo/logo10/BgPattern.vue",
+            "type": "registry:ui",
+            "target": "components/logo10/BgPattern.vue"
+        },
+        {
+            "path": "app/registry/blocks/logo/logo10/Logo10.vue",
+            "type": "registry:block",
+            "target": "components/logo10/Logo10.vue"
+        }
+    ],
+    "component": "@/registry/blocks/logo/logo10/Logo10.vue",
+    "className": []
+}
+
