@@ -1,0 +1,22 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "logo12",
+    "type": "registry:block",
+    "title": "logo",
+    "dependencies": [
+        "lucide-vue-next"
+    ],
+    "registryDependencies": [
+        "button",
+        "card"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/logo/logo12/Logo12.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/logo/logo12/Logo12.vue",
+    "className": []
+}
+
