@@ -17,9 +17,9 @@
                         <CarouselItem
                             v-for="logo in logos"
                             :key="logo.id"
-                            class="flex basis-1/3 justify-center pl-0 sm:basis-1/4 md:basis-1/5 lg:basis-1/6"
+                            class="flex basis-1/3 min-w-0 justify-center pl-0 sm:basis-1/4 md:basis-1/5 lg:basis-1/6"
                         >
-                            <div class="mx-10 flex shrink-0 items-center justify-center">
+                            <div class="px-3 flex items-center justify-center">
                                 <div>
                                     <img
                                         :alt="logo.description"
