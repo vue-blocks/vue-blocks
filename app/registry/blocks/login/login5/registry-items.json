@@ -1,0 +1,23 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "login5",
+    "type": "registry:block",
+    "title": "login",
+    "dependencies": [
+        "lucide-vue-next"
+    ],
+    "registryDependencies": [
+        "button",
+        "alert",
+        "pin-input"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/login/login5/Login5.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/login/login5/Login5.vue",
+    "className": []
+}
+
