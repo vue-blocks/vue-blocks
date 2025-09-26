@@ -1,0 +1,20 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "login7",
+    "type": "registry:block",
+    "title": "login",
+    "dependencies": [],
+    "registryDependencies": [
+        "button",
+        "input"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/login/login7/Login7.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/login/login7/Login7.vue",
+    "className": []
+}
+
