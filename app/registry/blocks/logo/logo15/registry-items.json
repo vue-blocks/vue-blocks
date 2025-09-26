@@ -1,0 +1,23 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "logo15",
+    "type": "registry:block",
+    "title": "logo",
+    "dependencies": [
+        "embla-carousel-auto-scroll"
+    ],
+    "registryDependencies":[
+        "button",
+        "carousel",
+        "card"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/logo/logo15/Logo15.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/logo/logo15/Logo15.vue",
+    "className": []
+}
+
