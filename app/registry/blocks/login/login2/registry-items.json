@@ -1,0 +1,22 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "login2",
+    "type": "registry:block",
+    "title": "login",
+    "dependencies": [
+        "lucide-vue-next"
+    ],
+    "registryDependencies": [
+        "button",
+        "input"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/login/login2/Login2.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/login/login2/Login2.vue",
+    "className": []
+}
+
