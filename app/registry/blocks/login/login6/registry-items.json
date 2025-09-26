@@ -1,0 +1,24 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "login6",
+    "type": "registry:block",
+    "title": "login",
+    "dependencies": [
+        "lucide-vue-next"
+    ],
+    "registryDependencies": [
+        "button",
+        "input",
+        "label",
+        "checkbox"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/login/login6/Login6.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/login/login6/Login6.vue",
+    "className": []
+}
+
