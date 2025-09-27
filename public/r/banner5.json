@@ -1,0 +1,19 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "banner5",
+  "type": "registry:block",
+  "title": "banner",
+  "dependencies": [
+    "lucide-vue-next"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "app/registry/blocks/banner/banner5/Banner5.vue",
+      "content": "<template>\n    <section\n        v-if=\"visible\"\n        class=\"animate-fade-in absolute left-0 right-0 top-4 z-50 mx-auto max-w-2xl\"\n    >\n        <div class=\"mx-4\">\n            <div class=\"bg-background w-full rounded-lg border p-4 shadow-md\">\n                <div class=\"relative flex flex-col gap-4 md:flex-row md:items-center md:justify-between\">\n                    <Button\n                        class=\"absolute right-0 top-0 h-8 w-8 md:hidden\"\n                        size=\"icon\"\n                        variant=\"ghost\"\n                        @click=\"handleClose\"\n                    >\n                        <X class=\"h-4 w-4\" />\n                    </Button>\n\n                    <div class=\"flex flex-col items-start gap-3 pt-2 md:flex-row md:items-center md:pt-0\">\n                        <div class=\"flex flex-col gap-1 md:flex-row md:items-center\">\n                            <p class=\"text-sm font-medium\">\n                                {{ title }}\n                            </p>\n                            <p class=\"text-muted-foreground text-sm\">\n                                {{ description }}\n                            </p>\n                        </div>\n                    </div>\n\n                    <div class=\"flex items-center gap-2\">\n                        <Button\n                            as-child\n                            class=\"w-full md:w-auto\"\n                            size=\"sm\"\n                            variant=\"outline\"\n                        >\n                            <a\n                                :href=\"buttonUrl\"\n                                target=\"_blank\"\n                            >\n                                {{ buttonText }}\n                            </a>\n                        </Button>\n                        <Button\n                            class=\"hidden h-8 w-8 md:inline-flex\"\n                            size=\"icon\"\n                            variant=\"ghost\"\n                            @click=\"handleClose\"\n                        >\n                            <X class=\"h-4 w-4\" />\n                        </Button>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nimport { X } from 'lucide-vue-next'\nimport { Button } from '@/components/ui/button'\n\nconst title = 'Version 2.0 is now available!'\nconst description = 'Check out all the new features.'\nconst buttonText = 'Learn More'\nconst buttonUrl = 'https://vue-blocks.dev'\nconst visible = ref<boolean>(true)\n\nconst handleClose = () => {\n    visible.value = !visible.value\n}\n</script>\n",
+      "type": "registry:block"
+    }
+  ]
+}
