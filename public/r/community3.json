@@ -1,0 +1,18 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "community3",
+  "type": "registry:block",
+  "title": "community",
+  "dependencies": [
+    "lucide-vue-next",
+    "@iconify/vue"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "app/registry/blocks/community/community3/Community3.vue",
+      "content": "<template>\n    <section class=\"py-32\">\n        <div class=\"container\">\n            <div class=\"flex flex-col items-start pb-10 md:items-center md:pb-14 xl:pb-[60px]\">\n                <Badge>\n                    <Users class=\"h-4 w-4\" />\n                    Community\n                </Badge>\n\n                <h4 class=\"mt-4 text-[28px] leading-[36px] font-semibold tracking-tight text-foreground md:text-center md:text-3xl xl:text-[48px] xl:leading-[56px]\">\n                    Be part of our network\n                </h4>\n\n                <p class=\"mt-2 text-lg text-muted-foreground md:text-center xl:mt-3 xl:text-xl\">\n                    Engage, <span class=\"font-medium text-foreground\">explore</span>\n                    , and <span class=\"font-medium text-foreground\">evolve</span>{{ \" \" }}\n                    with like-minded creators and coders.\n                </p>\n\n                <div class=\"mt-6 grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:mt-12 xl:gap-6\">\n                    <Card\n                        v-for=\"platform in platforms\"\n                        :key=\"platform.name\"\n                        class=\"rounded-2xl transition-all hover:shadow-md\"\n                    >\n                        <a\n                            :href=\"platform.url\"\n                            target=\"_blank\"\n                            class=\"flex h-full flex-col items-center p-6 md:p-8 xl:p-10\"\n                        >\n                            <Icon\n                                :icon=\"platform.icon\"\n                                class=\"mb-4 h-8 w-8 md:h-12 md:w-12 xl:h-16 xl:w-16\"\n                            />\n                            <div class=\"space-y-2 text-center\">\n                                <h5 class=\"text-sm font-medium md:text-lg\">{{ platform.name }}</h5>\n                                <p class=\"text-sm text-balance text-muted-foreground\">{{ platform.description }}</p>\n                            </div>\n                        </a>\n                    </Card>\n                </div>\n\n                <div class=\"mt-8 hidden max-w-[330px] text-center text-muted-foreground xl:block\">\n                    Join a network that collaborates, innovates, and thrives together.\n                </div>\n            </div>\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nimport { Users } from 'lucide-vue-next'\nimport { Icon } from '@iconify/vue'\n\nconst platforms = [\n    {\n        name: 'Twitter',\n        icon: 'mdi:twitter',\n        description: 'Get the latest updates, insights, and news',\n        url: 'https://vue-blocks.dev',\n    },\n    {\n        name: 'GitHub',\n        icon: 'mdi:github',\n        description: 'Collaborate, report issues, and enhance the project',\n        url: 'https://github.com/vue-blocks/vue-blocks',\n    },\n    {\n        name: 'Discord',\n        icon: 'ic:baseline-discord',\n        description: 'Chat, share ideas, and get support from the community',\n        url: 'https://vue-blocks.dev',\n    },\n]\n</script>\n",
+      "type": "registry:block"
+    }
+  ]
+}
