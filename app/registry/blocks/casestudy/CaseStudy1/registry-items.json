@@ -1,0 +1,24 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "CaseStudy1",
+    "type": "registry:block",
+    "title": "CaseStudy",
+    "dependencies": [
+        "lucide-vue-next"
+    ],
+    "registryDependencies": [
+        "alert",
+        "breadcrumb",
+        "button",
+        "separator"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/casestudy/CaseStudy1/CaseStudy1.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/casestudy/CaseStudy1/CaseStudy1.vue",
+    "className": []
+}
+
