@@ -1,0 +1,19 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "login9",
+  "type": "registry:block",
+  "title": "login",
+  "dependencies": [],
+  "registryDependencies": [
+    "button",
+    "input",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "app/registry/blocks/login/login9/Login9.vue",
+      "content": "<template>\n    <section class=\"bg-background h-screen\">\n        <div class=\"flex h-full items-center justify-center\">\n            <div class=\"flex flex-col items-center gap-6 lg:justify-start\">\n                <a :href=\"logo.url\">\n                    <img\n                        :alt=\"logo.alt\"\n                        :src=\"logo.src\"\n                        :title=\"logo.title\"\n                        class=\"h-10 dark:invert\"\n                    >\n                </a>\n                <div class=\"min-w-sm flex w-full max-w-sm flex-col items-center gap-y-4 rounded-lg border px-6 py-12\">\n                    <Button class=\"w-full\">\n                        <img\n                            alt=\"Google\"\n                            class=\"mr-2 size-4\"\n                            src=\"https://cdn.svglogos.dev/logos/google-icon.svg\"\n                        >\n                        {{ googleText }}\n                    </Button>\n\n                    <div class=\"relative flex w-full items-center justify-center py-2\">\n                        <div class=\"border-border absolute h-[1px] w-full border-t\" />\n                        <span class=\"bg-background text-muted-foreground relative px-2 text-xs\">\n                            OR\n                        </span>\n                    </div>\n\n                    <div class=\"flex w-full flex-col gap-2\">\n                        <Label>Email</Label>\n                        <Input\n                            class=\"bg-background text-sm\"\n                            placeholder=\"Email\"\n                            required\n                            type=\"email\"\n                        />\n                    </div>\n                    <div class=\"flex w-full flex-col gap-2\">\n                        <Label>Password</Label>\n                        <Input\n                            class=\"bg-background text-sm\"\n                            placeholder=\"Password\"\n                            required\n                            type=\"password\"\n                        />\n                    </div>\n                    <Button\n                        class=\"w-full\"\n                        type=\"submit\"\n                        variant=\"secondary\"\n                    >\n                        {{ buttonText }}\n                    </Button>\n                </div>\n                <div class=\"text-muted-foreground flex justify-center gap-1 text-sm\">\n                    <p>{{ signupText }}</p>\n                    <a\n                        :href=\"signupUrl\"\n                        class=\"text-primary font-medium hover:underline\"\n                    >\n                        Sign up\n                    </a>\n                </div>\n            </div>\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nimport { Button } from '@/components/ui/button'\nimport { Input } from '@/components/ui/input'\nimport { Label } from '@/components/ui/label'\n\nconst logo = {\n    url: 'https://vue-blocks.dev',\n    src: 'https://raw.githubusercontent.com/vue-blocks/vue-blocks/refs/heads/master/public/vue-blocks.svg',\n    alt: 'logo',\n    title: 'vue-blocks.dev',\n}\nconst buttonText = 'Login'\nconst googleText = 'Login with Google'\nconst signupText = 'Need an account?'\nconst signupUrl = 'https://vue-blocks.dev'\n</script>\n",
+      "type": "registry:block"
+    }
+  ]
+}
