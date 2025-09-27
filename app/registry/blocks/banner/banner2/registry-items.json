@@ -1,0 +1,21 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "banner2",
+    "type": "registry:block",
+    "title": "banner",
+    "dependencies": [
+        "lucide-vue-next"
+    ],
+    "registryDependencies": [
+        "button"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/banner/banner2/Banner2.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/banner/banner2/Banner2.vue",
+    "className": []
+}
+
