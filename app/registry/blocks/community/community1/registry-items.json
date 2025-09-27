@@ -1,0 +1,21 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "community1",
+    "type": "registry:block",
+    "title": "community",
+    "dependencies": [
+        "@iconify/vue"
+    ],
+    "registryDependencies": [
+        "button"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/community/community1/Community1.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/community/community1/Community1.vue",
+    "className": []
+}
+

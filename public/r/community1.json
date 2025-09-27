@@ -1,0 +1,19 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "community1",
+  "type": "registry:block",
+  "title": "community",
+  "dependencies": [
+    "@iconify/vue"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "app/registry/blocks/community/community1/Community1.vue",
+      "content": "<template>\n    <section class=\"py-32\">\n        <div class=\"container\">\n            <div class=\"flex flex-col items-center gap-5\">\n                <img\n                    src=\"https://www.vue-blocks.dev/logo.svg\"\n                    alt=\"logo\"\n                    class=\"size-10\"\n                >\n                <h2 class=\"text-center text-3xl font-semibold\">\n                    Join our community\n                    <br>\n                    <span class=\"text-muted-foreground/80\">\n                        of designers & developers\n                    </span>\n                </h2>\n                <div class=\"flex items-center gap-4\">\n                    <Button\n                        size=\"lg\"\n                        variant=\"outline\"\n                        as-child\n                    >\n                        <a\n                            href=\"https://x.com/vue-blocks\"\n                            target=\"_blank\"\n                            class=\"size-10\"\n                        >\n                            <Icon icon=\"mdi:twitter\" />\n                        </a>\n                    </Button>\n                    <Button\n                        size=\"lg\"\n                        variant=\"outline\"\n                        as-child\n                    >\n                        <a\n                            href=\"https://github.com/vue-blocks\"\n                            target=\"_blank\"\n                            class=\"size-10\"\n                        >\n                            <Icon icon=\"mdi:github\" />\n                        </a>\n                    </Button>\n                    <Button\n                        size=\"lg\"\n                        variant=\"outline\"\n                        as-child\n                    >\n                        <a\n                            href=\"https://vue-blocks.dev\"\n                            target=\"_blank\"\n                            class=\"size-10\"\n                        >\n                            <Icon icon=\"ic:baseline-discord\" />\n                        </a>\n                    </Button>\n                </div>\n            </div>\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nimport { Icon } from '@iconify/vue'\n\nimport { Button } from '@/components/ui/button'\n</script>\n",
+      "type": "registry:block"
+    }
+  ]
+}
