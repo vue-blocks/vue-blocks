@@ -1,0 +1,17 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "CaseStudy2",
+    "type": "registry:block",
+    "title": "CaseStudy",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+        {
+            "path": "app/registry/blocks/casestudy/CaseStudy2/CaseStudy2.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/casestudy/CaseStudy2/CaseStudy2.vue",
+    "className": []
+}
+
