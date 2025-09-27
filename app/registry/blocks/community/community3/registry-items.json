@@ -1,0 +1,23 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "community3",
+    "type": "registry:block",
+    "title": "community",
+    "dependencies": [
+        "lucide-vue-next",
+        "@iconify/vue"
+    ],
+    "registryDependencies": [
+        "badge",
+        "card"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/community/community3/Community3.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/community/community3/Community3.vue",
+    "className": []
+}
+
