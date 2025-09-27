@@ -1,0 +1,18 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "community2",
+  "type": "registry:block",
+  "title": "community",
+  "dependencies": [
+    "lucide-vue-next",
+    "@iconify/vue"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "app/registry/blocks/community/community2/Community2.vue",
+      "content": "<template>\n    <section class=\"py-32\">\n        <div class=\"container\">\n            <h2 class=\"mb-5 text-2xl font-semibold md:text-3xl\">\n                Join our community\n            </h2>\n            <p class=\"font-medium text-muted-foreground md:text-xl\">\n                Connect with others, share experiences, and stay in the loop.\n            </p>\n            <div class=\"mt-10 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4\">\n                <a\n                    v-for=\"platform in platforms\"\n                    :key=\"platform.name\"\n                    class=\"group rounded-md border border-border p-6\"\n                    :href=\"platform.link\"\n                >\n                    <div class=\"flex items-center justify-between gap-4\">\n                        <Icon\n                            :icon=\"platform.icon\"\n                            class=\"size-5\"\n                        />\n                        <ArrowUpRight\n                            class=\"size-4 -translate-x-2 translate-y-2 opacity-0 transition-all group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100\"\n                        />\n                    </div>\n                    <div class=\"mt-4\">\n                        <h3 class=\"mb-1 font-semibold\">{{ platform.name }}</h3>\n                        <p class=\"text-sm text-muted-foreground\">{{ platform.description }}</p>\n                    </div>\n                </a>\n            </div>\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nimport { ArrowUpRight } from 'lucide-vue-next'\nimport { Icon } from '@iconify/vue'\n\nconst platforms = [\n    {\n        name: 'Twitter',\n        icon: 'mdi:twitter',\n        description: 'Follow our latest updates and announcements.',\n        link: 'https://x.com./vue-blocks',\n    },\n    {\n        name: 'LinkedIn',\n        icon: 'mdi:linkedin',\n        description: 'Connect with us and explore career opportunities.',\n        link: 'https://vue-blocks.dev',\n    },\n    {\n        name: 'Github',\n        icon: 'mdi:github',\n        description: 'Contribute to our open-source projects.',\n        link: 'https://github.com/vue-blocks/vue-blcoks',\n    },\n    {\n        name: 'Discord',\n        icon: 'ic:baseline-discord',\n        description: 'Join our Discord server and connect with other developers.',\n        link: 'https://vue-blocks.dev',\n    },\n]\n</script>\n",
+      "type": "registry:block"
+    }
+  ]
+}
