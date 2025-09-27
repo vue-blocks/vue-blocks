@@ -1,0 +1,19 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "banner4",
+  "type": "registry:block",
+  "title": "banner",
+  "dependencies": [
+    "lucide-vue-next"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "app/registry/blocks/banner/banner4/Banner4.vue",
+      "content": "<template>\n    <section\n        v-if=\"defaultVisible\"\n        class=\"bg-primary w-full p-4\"\n    >\n        <div class=\"container\">\n            <div class=\"relative flex flex-col gap-4 text-center md:flex-row md:items-center md:justify-center\">\n                <Button\n                    variant=\"ghost\"\n                    size=\"icon\"\n                    class=\"absolute right-0 top-0 h-8 w-8 md:hidden\"\n                    @click=\"handleClose\"\n                >\n                    <X class=\"h-4 w-4\" />\n                </Button>\n\n                <div class=\"text-primary-foreground flex flex-col items-center gap-3 pt-2 md:flex-row md:items-center md:pt-0\">\n                    <div class=\"flex flex-col gap-1 md:flex-row md:items-center\">\n                        <p class=\"text-sm font-medium\">\n                            {{ title }}\n                        </p>\n                        <p class=\"text-primary-foreground/80 text-sm\">\n                            {{ description }}\n                        </p>\n                    </div>\n                </div>\n\n                <div class=\"flex items-center gap-2\">\n                    <Button\n                        variant=\"ghost\"\n                        size=\"icon\"\n                        class=\"hidden h-8 w-8 invert md:inline-flex\"\n                        @click=\"handleClose\"\n                    >\n                        <X class=\"h-4 w-4\" />\n                    </Button>\n                </div>\n            </div>\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nimport { X } from 'lucide-vue-next'\nimport { Button } from '@/components/ui/button'\n\nconst title = 'Black Friday Sale! 🎉'\nconst description = 'Up to 70% off on all components. Limited time only!'\nconst defaultVisible = ref<boolean>(true)\n\nconst handleClose = () => {\n    defaultVisible.value = !defaultVisible.value\n}\n</script>\n",
+      "type": "registry:block"
+    }
+  ]
+}
