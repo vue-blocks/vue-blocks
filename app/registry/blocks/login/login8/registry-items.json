@@ -1,0 +1,21 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "login8",
+    "type": "registry:block",
+    "title": "login",
+    "dependencies": [],
+    "registryDependencies": [
+        "button",
+        "input",
+        "label"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/login/login8/Login8.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/login/login8/Login8.vue",
+    "className": []
+}
+
