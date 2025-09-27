@@ -51,6 +51,8 @@
 <script lang="ts" setup>
 import { Users } from 'lucide-vue-next'
 import { Icon } from '@iconify/vue'
+import { Badge } from '@/components/ui/badge'
+import { Card } from '@/components/ui/card'
 
 const platforms = [
     {

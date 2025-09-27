@@ -7,7 +7,10 @@
         "lucide-vue-next",
         "@iconify/vue"
     ],
-    "registryDependencies": [],
+    "registryDependencies": [
+        "badge",
+        "card"
+    ],
     "files": [
         {
             "path": "app/registry/blocks/community/community3/Community3.vue",
