@@ -1,0 +1,20 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "banner6",
+  "type": "registry:block",
+  "title": "banner",
+  "dependencies": [
+    "lucide-vue-next"
+  ],
+  "registryDependencies": [
+    "button",
+    "avatar"
+  ],
+  "files": [
+    {
+      "path": "app/registry/blocks/banner/banner6/Banner6.vue",
+      "content": "<template>\n    <section\n        v-if=\"visible\"\n        class=\"animate-in fade-in slide-in-from-top-2 absolute left-0 right-0 top-4 z-50 mx-auto max-w-2xl\"\n    >\n        <div class=\"mx-4\">\n            <div class=\"bg-background w-full rounded-full border p-4 shadow-md\">\n                <div class=\"relative flex flex-col gap-4 md:flex-row md:items-center md:justify-between\">\n                    <div class=\"flex items-center gap-4\">\n                        <div class=\"flex -space-x-2\">\n                            <Avatar\n                                v-for=\"(avatar, i) in avatars\"\n                                :key=\"i\"\n                                class=\"ring-2 ring-white\"\n                            >\n                                <AvatarImage\n                                    :src=\"avatar.src\"\n                                    :alt=\"`User${i+1}`\"\n                                />\n                                <AvatarFallback>{{ avatar.fallback }}</AvatarFallback>\n                            </Avatar>\n                        </div>\n                        <p class=\"text-sm font-semibold\">\n                            {{ description }}\n                        </p>\n                    </div>\n\n                    <div class=\"flex items-center gap-2\">\n                        <Button\n                            variant=\"ghost\"\n                            size=\"icon\"\n                            class=\"h-8 w-8 rounded-full\"\n                            @click=\"handleClose\"\n                        >\n                            <X class=\"h-4 w-4\" />\n                        </Button>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nimport { X } from 'lucide-vue-next'\nimport { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'\nimport { Button } from '@/components/ui/button'\n\nconst description = 'Used by over 2K+ customers worldwide'\nconst avatars = [\n    { src: 'https://mockmind-api.uifaces.co/content/human/92.jpg', fallback: 'User' },\n    { src: 'https://mockmind-api.uifaces.co/content/human/104.jpg', fallback: 'User' },\n    { src: 'https://mockmind-api.uifaces.co/content/human/128.jpg', fallback: 'User' },\n    { src: 'https://mockmind-api.uifaces.co/content/human/97.jpg', fallback: 'User' },\n]\nconst visible = ref<boolean>(true)\n\nconst handleClose = () => {\n    visible.value = !visible.value\n}\n</script>\n",
+      "type": "registry:block"
+    }
+  ]
+}
