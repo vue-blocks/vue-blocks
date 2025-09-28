@@ -1,0 +1,24 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "community5",
+    "type": "registry:block",
+    "title": "community",
+    "dependencies": [
+        "lucide-vue-next",
+        "@iconify/vue"
+    ],
+    "registryDependencies": [
+        "https://registry.inspira-ui.com/interactive-grid-pattern.json",
+        "badge",
+        "Card"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/community/community5/Community5.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/community/community5/Community5.vue",
+    "className": []
+}
+
