@@ -1,0 +1,19 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "community7",
+    "type": "registry:block",
+    "title": "community",
+    "dependencies": [
+        "@iconify/vue"
+    ],
+    "registryDependencies": [],
+    "files": [
+        {
+            "path": "app/registry/blocks/community/community7/Community7.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/community/community7/Community7.vue",
+    "className": []
+}
+
