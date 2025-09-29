@@ -1,0 +1,17 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "stats1",
+  "type": "registry:block",
+  "title": "stats",
+  "dependencies": [],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "app/registry/blocks/stats/stats1/Stats1.vue",
+      "content": "<template>\n    <section class=\"bg-accent py-32\">\n        <div class=\"container flex flex-col items-start text-left\">\n            <div class=\"mb-12 w-full md:mb-16\">\n                <h2 class=\"mb-8 w-full max-w-[24rem] text-3xl font-bold text-pretty sm:text-4xl md:max-w-[30rem] lg:max-w-[37rem] lg:text-5xl\">\n                    Platform Performance Insights\n                </h2>\n                <div class=\"flex flex-col justify-start gap-2 sm:flex-row\">\n                    <Button class=\"w-full sm:w-auto\">\n                        Get Started\n                    </Button>\n                    <Button\n                        variant=\"outline\"\n                        class=\"w-full sm:w-auto\"\n                    >\n                        Learn More\n                    </Button>\n                </div>\n            </div>\n            <div class=\"grid w-full grid-cols-2 gap-12 sm:w-fit sm:grid-cols-4 lg:gap-16\">\n                <div class=\"w-full\">\n                    <div class=\"mb-2 text-4xl font-semibold sm:text-4xl lg:text-5xl\">\n                        90%\n                    </div>\n                    <div class=\"text-base leading-6 text-muted-foreground lg:text-lg\">\n                        Metric 1\n                    </div>\n                </div>\n                <div class=\"w-full\">\n                    <div class=\"mb-2 text-4xl font-semibold sm:text-4xl lg:text-5xl\">\n                        200+\n                    </div>\n                    <div class=\"text-base leading-6 text-muted-foreground lg:text-lg\">\n                        Metric 2\n                    </div>\n                </div>\n                <div class=\"w-full\">\n                    <div class=\"mb-2 text-4xl font-semibold sm:text-4xl lg:text-5xl\">\n                        99%\n                    </div>\n                    <div class=\"text-base leading-6 text-muted-foreground lg:text-lg\">\n                        Metric 3\n                    </div>\n                </div>\n                <div class=\"w-full\">\n                    <div class=\"mb-2 text-4xl font-semibold sm:text-4xl lg:text-5xl\">\n                        150+\n                    </div>\n                    <div class=\"text-base leading-6 text-muted-foreground lg:text-lg\">\n                        Metric 4\n                    </div>\n                </div>\n            </div>\n        </div>\n    </section>\n</template>\n\n<script lang=\"ts\" setup>\nimport { Button } from '@/components/ui/button'\n</script>\n",
+      "type": "registry:block"
+    }
+  ]
+}
