@@ -1,0 +1,21 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "blogpost2",
+    "type": "registry:block",
+    "title": "blogpost",
+    "dependencies": [
+        "lucide-vue-next"
+    ],
+    "registryDependencies": [
+        "avatar"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/blogpost/blogpost2/BlogPost2.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/blogpost/blogpost2/BlogPost2.vue",
+    "className": []
+}
+
