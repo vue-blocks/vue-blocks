@@ -4,7 +4,8 @@
     "type": "registry:block",
     "title": "blogpost",
     "dependencies": [
-        "lucide-vue-next"
+        "lucide-vue-next",
+        "@vueuse/core"
     ],
     "registryDependencies": [
         "alert",

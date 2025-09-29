@@ -129,6 +129,7 @@
 
 <script lang="ts" setup>
 import { Lightbulb } from 'lucide-vue-next'
+import { useDateFormat } from '@vueuse/core'
 
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
