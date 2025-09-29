@@ -1,0 +1,19 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "stats1",
+    "type": "registry:block",
+    "title": "stats",
+    "dependencies": [],
+    "registryDependencies": [
+        "button"
+    ],
+    "files": [
+        {
+            "path": "app/registry/blocks/stats/stats1/Stats1.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/stats/stats1/Stats1.vue",
+    "className": []
+}
+
