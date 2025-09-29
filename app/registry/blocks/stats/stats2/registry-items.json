@@ -1,0 +1,19 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "stats2",
+    "type": "registry:block",
+    "title": "stats",
+    "dependencies": [
+        "lucide-vue-next"
+    ],
+    "registryDependencies": [],
+    "files": [
+        {
+            "path": "app/registry/blocks/stats/stats2/Stats2.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/stats/stats2/Stats2.vue",
+    "className": []
+}
+
