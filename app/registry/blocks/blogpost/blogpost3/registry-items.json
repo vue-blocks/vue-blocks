@@ -1,0 +1,17 @@
+{
+    "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+    "name": "blogpost3",
+    "type": "registry:block",
+    "title": "blogpost",
+    "dependencies": [],
+    "registryDependencies": [],
+    "files": [
+        {
+            "path": "app/registry/blocks/blogpost/blogpost3/BlogPost3.vue",
+            "type": "registry:block"
+        }
+    ],
+    "component": "@/registry/blocks/blogpost/blogpost3/BlogPost3.vue",
+    "className": []
+}
+
